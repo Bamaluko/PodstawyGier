@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &75763573 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7311361701930756133, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
+  m_PrefabInstance: {fileID: 4865159414226545042}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1730245332
 GameObject:
   m_ObjectHideFlags: 0
@@ -19590,6 +19601,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4865159413076915919, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
+      propertyPath: fadeScreen
+      value: 
+      objectReference: {fileID: 75763573}
     - target: {fileID: 7311361702017497153, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -19690,6 +19705,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7311361702582838192, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7311361703572424333, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
 --- !u!1001 &6822987060547397286
@@ -19747,6 +19770,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6822987060693782651, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 102.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 6822987060693782651, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
 --- !u!1001 &8747255831402591552
@@ -19766,11 +19797,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8747255830046206986, guid: 15a5505c9891b3242b018167fbb11c3d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.79
       objectReference: {fileID: 0}
     - target: {fileID: 8747255830046206986, guid: 15a5505c9891b3242b018167fbb11c3d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 8747255830046206986, guid: 15a5505c9891b3242b018167fbb11c3d, type: 3}
       propertyPath: m_LocalPosition.z
