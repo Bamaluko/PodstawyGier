@@ -100,7 +100,8 @@ public class PlayerHealthController : MonoBehaviour
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                gameObject.SetActive(false);
+                //gameObject.SetActive(false);
+                RespawnController.instance.Respawn();
             }
             //If we are not dead yet, we apply invincibility for a brief moment.
             else
