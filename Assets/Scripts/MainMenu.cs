@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject continueButton;
   
-    //public PlayerAbilityTracker player;
+    public PlayerHealthController player;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,9 @@ public class MainMenu : MonoBehaviour
 
     public void Continue()
     {
-        
+        player.gameObject.SetActive(true);
+        player.transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"), PlayerPrefs.GetFloat("PosY"),
+            PlayerPrefs.GetFloat("PosZ"));
 
         SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
     }
