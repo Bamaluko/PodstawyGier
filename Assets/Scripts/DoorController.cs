@@ -104,6 +104,11 @@ public class DoorController : MonoBehaviour
         //We start slowly uncovering the scene.
         UIController.instance.StartFadeFromBlack();
 
+        PlayerPrefs.SetString("ContinueLevel", levelToLoad);
+        PlayerPrefs.SetFloat("PosX", exitPoint.position.x);
+        PlayerPrefs.SetFloat("PosY", exitPoint.position.y);
+        PlayerPrefs.SetFloat("PosZ", exitPoint.position.z);
+
         //New scene is loaded.
         SceneManager.LoadScene(levelToLoad);
     }
