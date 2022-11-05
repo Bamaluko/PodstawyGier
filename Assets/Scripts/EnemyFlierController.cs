@@ -30,6 +30,10 @@ public class EnemyFlierController : MonoBehaviour
     void Start()
     {
         player = PlayerHealthController.instance.transform;
+        //if(PlayerPrefs.HasKey("delete_water_bridges"))
+        //{
+        //    Destroy(gameObject);
+        //}
     }
 
     // Update is called once per frame

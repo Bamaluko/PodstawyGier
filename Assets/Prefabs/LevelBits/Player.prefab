@@ -242,7 +242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9092983750469171160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9, z: 0}
+  m_LocalPosition: {x: 0, y: -0.994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -287,8 +287,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 984592483
-  m_SortingLayer: 0
+  m_SortingLayerID: -868975091
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 5148424761635712751, guid: 09f3889801899e7438334d6231bec1e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -310,7 +310,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 9092983750469171160}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 3d341d8c95f253841846a9b1fb897910, type: 2}
+  m_Material: {fileID: 6200000, guid: 06902104fdbdabd4988ba146da53ed0a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -327,7 +327,7 @@ Animator:
   m_GameObject: {fileID: 9092983750469171160}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bf6a58864dcde3244aa0e8155fb70e75, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6daf052732980de46b2d2b1688f10f7b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 9092983751034568384}
   - component: {fileID: 9092983751034568414}
   - component: {fileID: 9092983751034568415}
+  - component: {fileID: 608273207301495896}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -485,8 +486,38 @@ MonoBehaviour:
   groundPoint: {fileID: 9092983749199763055}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 1032
   anim: {fileID: 9092983749924564603}
   shotToFire: {fileID: 2640202189778734614, guid: febc4d136b061d54ab7949cf1f895e7a, type: 3}
   shotPoint: {fileID: 9092983750419300951}
-  canMove: 0
+  dashSpeed: 25
+  dashTime: 0.2
+  theSR: {fileID: 9092983749924564605}
+  afterImage: {fileID: 3307146712678673430, guid: 1df34dc8c76678540803302e644fd78c, type: 3}
+  afterImageLifetime: 0.5
+  timeBetweenAfterImages: 0.033333335
+  afterImageColor: {r: 0.003862569, g: 0.07277766, b: 0.2924528, a: 0.69411767}
+  waitAfterDashing: 0.25
+  standing: {fileID: 9092983749924564601}
+  ball: {fileID: 9092983750469171160}
+  waitToBall: 0.5
+  ballAnim: {fileID: 9092983750469171162}
+  bombPoint: {fileID: 9092983749778302229}
+  bomb: {fileID: 7194540616736852048, guid: 735e50082a2d90742beff87fcb702c20, type: 3}
+  canMove: 1
+--- !u!114 &608273207301495896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9092983751034568413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbfaa01fe1dde3f489a130e581a33282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDoubleJump: 0
+  canDash: 0
+  canBecomeBall: 0
+  canDropBomb: 0

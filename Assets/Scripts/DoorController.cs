@@ -20,6 +20,10 @@ public class DoorController : MonoBehaviour
     * movePlayerSpeed - how fast to move the player towards the exit point.
     * 
     * levelToLoad - new scene to be loaded.
+    * 
+    * alternative1, alternative2 - alternative player prefs entries for choosing alternation mechanic.
+    * 
+    * buttonText1, buttonText2 - what should be written on the buttons, when choosing new mechanic.
     */
 
     public Animator anim;
@@ -35,6 +39,17 @@ public class DoorController : MonoBehaviour
     public float movePlayerSpeed;
 
     public string levelToLoad;
+
+    public string alternative1;
+
+    public string alternative2;
+
+    public string buttonText1;
+
+    public string buttonText2;
+
+
+    public GameObject choiceScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +101,12 @@ public class DoorController : MonoBehaviour
         //The animator should stop working now, so that we are stuck on the running animation.
         thePlayer.anim.enabled = false;
 
+        //Trigger choice mechanic, if we are going through the door for the first time.
+        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
+        {
+            ChoiceWindow();
+        }
+
         //We slowly cover the screen.
         UIController.instance.StartFadeToBlack();
 
@@ -111,5 +132,14 @@ public class DoorController : MonoBehaviour
 
         //New scene is loaded.
         SceneManager.LoadScene(levelToLoad);
+    }
+
+    public void ChoiceWindow()
+    {
+        if (!choiceScreen.activeSelf)
+        {
+            //We pass player prefs entries for each option and prompt for the button.
+            UIController.instance.ChoiceWindow(alternative1, alternative2, buttonText1, buttonText2);
+        }
     }
 }

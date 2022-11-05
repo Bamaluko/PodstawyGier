@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6822987059220251082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 121.9, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,7 +79,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 42.887638, y: 4.903368}
+  m_Offset: {x: 2.6855927, y: 2.3378754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -90,7 +90,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 121.564064, y: 29.82259}
+  m_Size: {x: 40.475845, y: 24.691605}
   m_EdgeRadius: 0
 --- !u!1 &6822987059875208599
 GameObject:
@@ -224,7 +224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6822987060462624474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.62, y: 0.87, z: -10}
+  m_LocalPosition: {x: 124.6, y: 1.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -319,7 +319,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6822987060587818913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.25, y: -0.17, z: 0}
+  m_LocalPosition: {x: -5.92, y: -0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6822987060693782652}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 102.43, y: 3.9, z: -0.92467016}
+  m_LocalPosition: {x: 102.53, y: 3.63, z: -0.92467016}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -403,4 +403,9 @@ MonoBehaviour:
   distanceToOpen: 7.5
   exitPoint: {fileID: 6822987060587818926}
   movePlayerSpeed: 8
-  levelToLoad: TestScene2
+  levelToLoad: Area 2
+  alternative1: delete_water_bridges
+  alternative2: rotate_square_platform
+  buttonText1: Make water bridges diasappear
+  buttonText2: Rotate all the square blocks
+  choiceScreen: {fileID: 0}
