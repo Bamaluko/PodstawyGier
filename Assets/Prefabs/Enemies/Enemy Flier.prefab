@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnDamage: 1
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 2850065786240644843, guid: 46778094772a1a647a0fc42c5e7f0329, type: 3}
   damageAmount: 3
 --- !u!114 &801617248320405895
 MonoBehaviour:
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalHealth: 3
-  deathEffect: {fileID: 2850065786240644843, guid: 46778094772a1a647a0fc42c5e7f0329, type: 3}
+  deathEffect: {fileID: 5224727392508896670, guid: d50c0694438104d409ea4f2334af933f, type: 3}
 --- !u!114 &801617248320405892
 MonoBehaviour:
   m_ObjectHideFlags: 0

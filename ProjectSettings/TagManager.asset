@@ -16,8 +16,8 @@ TagManager:
   - Player Shot
   - No Colisions
   - Enemy
-  - 
-  - 
+  - Destructible
+  - Pickup
   - 
   - 
   - 
@@ -41,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3425992205
     locked: 0
