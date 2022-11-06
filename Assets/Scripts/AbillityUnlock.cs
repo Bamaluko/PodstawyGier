@@ -30,16 +30,19 @@ public class AbillityUnlock : MonoBehaviour
             if (unlockDash)
             {
                 player.canDash = true;
+                PlayerPrefs.SetInt("canDash", 1);
             }
 
             if (unlockBecomeBall)
             {
                 player.canBecomeBall = true;
+                PlayerPrefs.SetInt("canBecomeBall", 1);
             }
 
             if (unlockDropBomb)
             {
                 player.canDropBomb = true;
+                PlayerPrefs.SetInt("canDropBomb", 1);
             }
 
             PlayerPrefs.SetString(ID, ID);

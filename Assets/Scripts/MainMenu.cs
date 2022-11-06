@@ -36,6 +36,19 @@ public class MainMenu : MonoBehaviour
         {
             player.canDoubleJump = true;
         }
+        if (PlayerPrefs.GetInt("canDash") == 1)
+        {
+            player.canDash = true;
+        }
+        if (PlayerPrefs.GetInt("canBecomeBall") == 1)
+        {
+            player.canBecomeBall = true;
+        }
+        if (PlayerPrefs.GetInt("canDropBomb") == 1)
+        {
+            player.canDropBomb = true;
+        }
+
 
 
         SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
