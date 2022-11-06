@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject continueButton;
   
-    public PlayerHealthController player;
+    public PlayerAbillityTracker player;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
+        PlayerPrefs.SetInt("canDoubleJump", 0);
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(newGameScene);
     }
@@ -31,6 +32,11 @@ public class MainMenu : MonoBehaviour
         player.gameObject.SetActive(true);
         player.transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"), PlayerPrefs.GetFloat("PosY"),
             PlayerPrefs.GetFloat("PosZ"));
+        if (PlayerPrefs.GetInt("canDoubleJump") == 1)
+        {
+            player.canDoubleJump = true;
+        }
+
 
         SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
     }

@@ -5,6 +5,15 @@ using UnityEngine;
 public class AbillityUnlock : MonoBehaviour
 {
     public bool unlockDoubleJump, unlockDash, unlockBecomeBall, unlockDropBomb;
+    public string ID;
+
+    public void Start()
+    {
+        if (PlayerPrefs.HasKey(ID))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +24,7 @@ public class AbillityUnlock : MonoBehaviour
             if (unlockDoubleJump)
             {
                 player.canDoubleJump = true;
+                PlayerPrefs.SetInt("canDoubleJump", 1);
             }
 
             if (unlockDash)
@@ -32,6 +42,7 @@ public class AbillityUnlock : MonoBehaviour
                 player.canDropBomb = true;
             }
 
+            PlayerPrefs.SetString(ID, ID);
             Destroy(gameObject);
         }
     }
