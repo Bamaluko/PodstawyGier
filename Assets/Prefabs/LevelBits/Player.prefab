@@ -496,7 +496,7 @@ MonoBehaviour:
   afterImage: {fileID: 3307146712678673430, guid: 1df34dc8c76678540803302e644fd78c, type: 3}
   afterImageLifetime: 0.5
   timeBetweenAfterImages: 0.033333335
-  afterImageColor: {r: 0, g: 0, b: 0.5283019, a: 0}
+  afterImageColor: {r: 0, g: 0, b: 0.5283019, a: 0.7058824}
   waitAfterDashing: 0.25
   standing: {fileID: 9092983749924564601}
   ball: {fileID: 9092983750469171160}
