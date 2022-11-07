@@ -10,6 +10,10 @@ public class RotateOnPref : MonoBehaviour
 
     void Start()
     {
+        if (PlayerPrefs.HasKey(prefRequired))
+        {
+            transform.Rotate(0, 0, rotationSpeed * Random.Range(0, 160));
+        }
         
     }
 
@@ -18,9 +22,6 @@ public class RotateOnPref : MonoBehaviour
     {
         if (PlayerPrefs.HasKey(prefRequired))
         {
-            //Vector3 position = gameObject.GetComponent<Renderer>().bounds.center;
-            //transform.RotateAround(position, new Vector3(0,0,1), rotationSpeed * Time.deltaTime);
-            
             transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
         }
     }
