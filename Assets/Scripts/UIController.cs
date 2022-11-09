@@ -183,6 +183,10 @@ public class UIController : MonoBehaviour
 
             //Time within the game won't flow anymore.
             Time.timeScale = 0;
+        } 
+        else
+        {
+            choiceScreen.SetActive(false);
         }
     }
 

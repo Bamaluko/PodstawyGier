@@ -136,10 +136,7 @@ public class DoorController : MonoBehaviour
 
     public void ChoiceWindow()
     {
-        if (!choiceScreen.activeSelf)
-        {
-            //We pass player prefs entries for each option and prompt for the button.
-            UIController.instance.ChoiceWindow(alternative1, alternative2, buttonText1, buttonText2);
-        }
+        //We pass player prefs entries for each option and prompt for the button.
+        UIController.instance.ChoiceWindow(alternative1, alternative2, buttonText1, buttonText2);
     }
 }
