@@ -116,9 +116,6 @@ public class DoorController : MonoBehaviour
         //We set new spawn point.
         RespawnController.instance.setSpawn(exitPoint.position);
 
-        //Now the player can move.
-        thePlayer.canMove = true;
-
         //We enable the animator again, so that it works as usual.
         thePlayer.anim.enabled = true;
 
@@ -132,6 +129,11 @@ public class DoorController : MonoBehaviour
 
         //New scene is loaded.
         SceneManager.LoadScene(levelToLoad);
+
+        thePlayer.transform.position = new Vector3(exitPoint.position.x, exitPoint.position.y, exitPoint.position.z);
+
+        //Now the player can move.
+        thePlayer.canMove = true;
     }
 
     public void ChoiceWindow()
