@@ -9,19 +9,15 @@ public class AcidDamage : MonoBehaviour
 
     public GameObject pickupEffect;
 
+    public string requiredPref;
+
     void OnCollisionEnter2D(Collision2D collision)      // Mozna dodac OnCollisionStay2D i wtedy zadawac damage co okreslony przedzial czasu
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (!PlayerPrefs.HasKey("no_damage_water"))
+            if (!PlayerPrefs.HasKey(requiredPref))
             {
-                PlayerHealthController player = collision.gameObject.GetComponentInParent<PlayerHealthController>();
-
-                if (pickupEffect != null)
-                {
-                    Instantiate(pickupEffect, transform.position, Quaternion.identity);
-                }
-                player.DamagePlayer(points);
+                PlayerHealthController.instance.DamagePlayer(points);
             }
             
         }

@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
+        
     }
 
     public void NewGame()
@@ -25,6 +26,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("canDoubleJump", 0);
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(newGameScene);
+        PlayerPrefs.SetInt("max_health", 6);
     }
 
     public void Continue()

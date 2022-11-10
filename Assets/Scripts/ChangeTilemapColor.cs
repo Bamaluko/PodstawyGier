@@ -12,8 +12,6 @@ public class ChangeTilemapColor : MonoBehaviour
         {
             Tilemap tiles = gameObject.GetComponent<Tilemap>();
             tiles.color = Color.green;
-        }
-        
+        } 
     }
-  
 }

@@ -8,6 +8,16 @@ public class HealthIncrease : MonoBehaviour
 
     public GameObject pickupEffect;
 
+    public string healthPickupId;
+
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey(healthPickupId))
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -20,6 +30,8 @@ public class HealthIncrease : MonoBehaviour
             }
 
             player.MaxHealtIncrease(points);
+            PlayerPrefs.SetString(healthPickupId, "pickup collected");
+            PlayerPrefs.SetInt("max_health", PlayerPrefs.GetInt("max_health") + points);
             Destroy(gameObject);
         }
     }
