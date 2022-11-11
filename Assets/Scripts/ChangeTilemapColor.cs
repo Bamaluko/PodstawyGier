@@ -5,10 +5,12 @@ using UnityEngine.Tilemaps;
 
 public class ChangeTilemapColor : MonoBehaviour
 {
+    public string requiredPref;
+
     // Start is called before the first frame update
     void Start()
     {
-        if (!PlayerPrefs.HasKey("no_damage_water"))
+        if (!PlayerPrefs.HasKey(requiredPref))
         {
             Tilemap tiles = gameObject.GetComponent<Tilemap>();
             tiles.color = Color.green;

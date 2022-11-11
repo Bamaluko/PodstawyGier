@@ -92,7 +92,7 @@ Tilemap:
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 1, b: 0, a: 1}
   m_Origin: {x: -2, y: -7, z: 0}
   m_Size: {x: 56, y: 7, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -287,7 +287,7 @@ Tilemap:
   m_TileColorArray: []
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.051181078, g: 1, b: 0, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 0, y: 0, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -321,4 +321,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b4e57d5fd9873449ee160f2aaf0d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefRequired: delete_water_bridges
+  prefRequired: delete_acid_bridges

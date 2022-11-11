@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class DoorController : MonoBehaviour
 {
@@ -48,8 +49,10 @@ public class DoorController : MonoBehaviour
 
     public string buttonText2;
 
+    public VideoClip videoClip1;
 
-    public GameObject choiceScreen;
+    public VideoClip videoClip2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -110,6 +113,12 @@ public class DoorController : MonoBehaviour
         //We slowly cover the screen.
         UIController.instance.StartFadeToBlack();
 
+        VitalPoint point = FindObjectOfType<VitalPoint>();
+        if (point != null)
+        {
+            Destroy(point.gameObject);
+        }
+
         //Wait fo 1.5.
         yield return new WaitForSeconds(1.5f);
 
@@ -139,6 +148,6 @@ public class DoorController : MonoBehaviour
     public void ChoiceWindow()
     {
         //We pass player prefs entries for each option and prompt for the button.
-        UIController.instance.ChoiceWindow(alternative1, alternative2, buttonText1, buttonText2);
+        UIController.instance.ChoiceWindow(alternative1, alternative2, buttonText1, buttonText2, videoClip1, videoClip2);
     }
 }

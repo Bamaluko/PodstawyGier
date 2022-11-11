@@ -7,8 +7,6 @@ public class AcidDamage : MonoBehaviour
 {
     public int points;
 
-    public GameObject pickupEffect;
-
     public string requiredPref;
 
     void OnCollisionEnter2D(Collision2D collision)      // Mozna dodac OnCollisionStay2D i wtedy zadawac damage co okreslony przedzial czasu

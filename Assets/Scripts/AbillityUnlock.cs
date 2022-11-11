@@ -11,7 +11,7 @@ public class AbillityUnlock : MonoBehaviour
     {
         if (PlayerPrefs.HasKey(ID))
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 

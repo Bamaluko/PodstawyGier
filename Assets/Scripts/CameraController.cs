@@ -21,6 +21,9 @@ public class CameraController : MonoBehaviour
     private float halfHeight;
     private float halfWidth;
 
+    public Transform vitalPoint;
+    private bool vitalActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,20 +38,33 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If there is a player we do stuff.
-        if (player != null)
+        if (Input.GetKeyDown(KeyCode.V) && vitalPoint != null)
         {
-            //Big maths. Setting position of the camera. We want the camera to follow the player, but we also want it to
-            //get stuck on level boundaries. Mathf.Clamp returns minimum or maximu value given, if the actual one is lower
-            //than minimum or higher tham maximum.
-            transform.position = new Vector3(
-                Mathf.Clamp(player.transform.position.x, boundsBox.bounds.min.x + halfWidth, boundsBox.bounds.max.x - halfWidth),
-                Mathf.Clamp(player.transform.position.y, boundsBox.bounds.min.y + halfHeight, boundsBox.bounds.max.y - halfHeight),
-                transform.position.z);
+            transform.position = vitalPoint.position;
+            vitalActive = true;
         }
-        else
+        //If there is a player we do stuff.
+        else if(!vitalActive)
         {
-            player = FindObjectOfType<PlayerController>();
+            if (player != null)
+            {
+                //Big maths. Setting position of the camera. We want the camera to follow the player, but we also want it to
+                //get stuck on level boundaries. Mathf.Clamp returns minimum or maximu value given, if the actual one is lower
+                //than minimum or higher tham maximum.
+                transform.position = new Vector3(
+                    Mathf.Clamp(player.transform.position.x, boundsBox.bounds.min.x + halfWidth, boundsBox.bounds.max.x - halfWidth),
+                    Mathf.Clamp(player.transform.position.y, boundsBox.bounds.min.y + halfHeight, boundsBox.bounds.max.y - halfHeight),
+                    transform.position.z);
+            }
+            else
+            {
+                player = FindObjectOfType<PlayerController>();
+            }
+        }
+
+        if(Input.GetKeyUp(KeyCode.V))
+        {
+            vitalActive = false;
         }
     }
 }

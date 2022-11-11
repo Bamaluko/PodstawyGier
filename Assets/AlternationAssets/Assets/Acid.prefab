@@ -1143,8 +1143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 20
-  pickupEffect: {fileID: 0}
-  requiredPref: no_damage_water
+  requiredPref: no_damage_acid
 --- !u!114 &1259693285254303850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,3 +1156,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270d9816bb8d8a245a577ba4274cc667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requiredPref: no_damage_acid

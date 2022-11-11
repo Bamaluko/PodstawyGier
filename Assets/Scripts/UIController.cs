@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Text;
+using UnityEngine.Video;
 
 public class UIController : MonoBehaviour
 {
@@ -54,6 +55,9 @@ public class UIController : MonoBehaviour
 
     public TMP_Text buttonText2TMP;
 
+    public VideoPlayer vid1;
+    public VideoPlayer vid2;
+
     private void Awake()
     {
         if (instance == null)
@@ -65,12 +69,6 @@ public class UIController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //UpdateHealth(PlayerHealthController.instance.currentHealth, PlayerHealthController.instance.maxHealth);
     }
 
     // Update is called once per frame
@@ -166,7 +164,7 @@ public class UIController : MonoBehaviour
         SceneManager.LoadScene(mainMenuScene);
     }
 
-    public void ChoiceWindow(string pref1, string pref2, string text1, string text2)
+    public void ChoiceWindow(string pref1, string pref2, string text1, string text2, VideoClip videoClip1, VideoClip videoClip2)
     {
         if (!choiceScreen.activeSelf)
         {
@@ -180,6 +178,11 @@ public class UIController : MonoBehaviour
             //Set corresponding prompts on the buttons.
             buttonText1TMP.text = text1;
             buttonText2TMP.text = text2;
+
+            //Setting videos.
+            vid1.clip = videoClip1;
+            vid2.clip = videoClip2;
+
 
             //Time within the game won't flow anymore.
             Time.timeScale = 0;
