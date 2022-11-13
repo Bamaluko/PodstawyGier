@@ -18,8 +18,8 @@ TagManager:
   - Enemy
   - Destructible
   - Pickup
-  - 
-  - 
+  - EnemyShot
+  - Tower
   - 
   - 
   - 
