@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     public int damageValue;
+    public GameObject destroyEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +21,16 @@ public class BulletScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //print(this.gameObject.transform.parent.name);
         if (collision.gameObject)
         {
             if (collision.gameObject.tag == "Player")
             {
                 PlayerHealthController player = collision.gameObject.GetComponent<PlayerHealthController>();
                 player.DamagePlayer(damageValue);
+            }
+            if(destroyEffect != null)
+            {
+                Instantiate(destroyEffect, transform.position, transform.rotation);
             }
             Destroy(this.gameObject);
         }
