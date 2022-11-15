@@ -21,8 +21,6 @@ public class Tower : MonoBehaviour
             nextTimeToFire = Time.time + 1 / FireRate;
             shoot();
         }
-
-
     }
 
     void shoot()

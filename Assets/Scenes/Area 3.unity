@@ -3852,7 +3852,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7203472149105980818, guid: f50cb9689ac24b046b698fc0db308728, type: 3}
       propertyPath: canBecomeBall
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7203472149105980818, guid: f50cb9689ac24b046b698fc0db308728, type: 3}
       propertyPath: canDoubleJump

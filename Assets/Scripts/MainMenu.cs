@@ -18,7 +18,6 @@ public class MainMenu : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
-        
     }
 
     public void NewGame()
@@ -50,8 +49,6 @@ public class MainMenu : MonoBehaviour
         {
             player.canDropBomb = true;
         }
-
-
 
         SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
     }

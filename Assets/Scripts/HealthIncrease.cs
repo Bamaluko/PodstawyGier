@@ -31,7 +31,7 @@ public class HealthIncrease : MonoBehaviour
 
             player.MaxHealtIncrease(points);
             PlayerPrefs.SetString(healthPickupId, "pickup collected");
-            PlayerPrefs.SetInt("max_health", PlayerPrefs.GetInt("max_health") + points);
+            //PlayerPrefs.SetInt("max_health", PlayerPrefs.GetInt("max_health") + points);
             Destroy(gameObject);
         }
     }

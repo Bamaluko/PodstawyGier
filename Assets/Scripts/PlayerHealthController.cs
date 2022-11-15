@@ -53,9 +53,9 @@ public class PlayerHealthController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(PlayerPrefs.HasKey("max_health"))
+        if(PlayerPrefs.HasKey("MaxHealth"))
         {
-            maxHealth = PlayerPrefs.GetInt("max_health");
+            maxHealth = PlayerPrefs.GetInt("MaxHealth");
         }
         currentHealth = maxHealth;
     }
@@ -141,6 +141,6 @@ public class PlayerHealthController : MonoBehaviour
     {
         this.maxHealth += points;
         this.currentHealth = this.maxHealth;
-        PlayerPrefs.SetInt("MaxHealth", this.maxHealth + points);
+        PlayerPrefs.SetInt("MaxHealth", this.maxHealth);
     }
 }
