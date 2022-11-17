@@ -505,6 +505,7 @@ MonoBehaviour:
   bombPoint: {fileID: 9092983749778302229}
   bomb: {fileID: 7194540616736852048, guid: 735e50082a2d90742beff87fcb702c20, type: 3}
   canMove: 1
+  jumpBuffer: 0.15
 --- !u!114 &7203472149105980818
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -59,6 +59,10 @@ public class DoorController : MonoBehaviour
     {
         //Setting up the reference to the player.
         thePlayer = PlayerHealthController.instance.GetComponent<PlayerController>();
+        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().color = Color.blue;
+        }
     }
 
     // Update is called once per frame

@@ -67,6 +67,9 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove;
 
+    //Jump buffer
+    private float jumpBufferCounter = 0;
+    public float jumpBuffer;
 
     // Start is called before the first frame update
     void Start()
@@ -134,7 +137,12 @@ public class PlayerController : MonoBehaviour
 
             //JUMPING
             //Jumping. We can jump after pressing the space bar when we are on the ground.
-            if (Input.GetButtonDown("Jump") && (isOnGround || (canDoubleJump && abilities.canDoubleJump)))
+            if (Input.GetButtonDown("Jump"))
+            {
+                jumpBufferCounter = jumpBuffer;
+            }
+
+            if ((!Input.GetButtonUp("Jump") && jumpBufferCounter > 0) && (isOnGround || (canDoubleJump && abilities.canDoubleJump && Input.GetButtonDown("Jump"))))
             {
                 if (isOnGround)
                 {
@@ -148,6 +156,15 @@ public class PlayerController : MonoBehaviour
                 }
 
                 theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+            }
+
+            if(jumpBufferCounter > 0)
+            {
+                jumpBufferCounter -= Time.deltaTime;
+                if(jumpBufferCounter < 0)
+                {
+                    jumpBufferCounter = 0;
+                }
             }
 
             //FIRING
