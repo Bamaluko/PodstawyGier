@@ -220,4 +220,17 @@ public class UIController : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+
+    public void ChoiceWindowNoAlternative()
+    {
+        if (choiceScreen.activeSelf)
+        {
+            //Deactivate the window, after choice is made.
+            choiceScreen.SetActive(false);
+
+            //Time within the game will go on.
+            Time.timeScale = 1;
+        }
+    }
 }
