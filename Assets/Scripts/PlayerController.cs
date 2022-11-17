@@ -133,7 +133,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
             //Checking if on the ground. Basically we draw a small circle around groundPoint and se if there is ground within it.
-            isOnGround = Physics2D.OverlapCircle(groundPoint.position, .4f, whatIsGround);
+            isOnGround = Physics2D.OverlapCircle(groundPoint.position, .15f, whatIsGround);
 
             //JUMPING
             //Jumping. We can jump after pressing the space bar when we are on the ground.

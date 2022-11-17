@@ -114,6 +114,23 @@ public class DoorController : MonoBehaviour
             ChoiceWindow();
         }
 
+        yield return new WaitForSeconds(0.1f);
+
+        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
+        {
+            //The player is exiting the area now.
+            playerExiting = false;
+
+            //The animator should stop working now, so that we are stuck on the running animation.
+            thePlayer.anim.enabled = true;
+            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x + 2 * transform.localScale.x, thePlayer.transform.position.y, thePlayer.transform.position.z);
+
+            //Now the player can move.
+            thePlayer.canMove = true;
+
+            yield break;
+        }
+
         //We slowly cover the screen.
         UIController.instance.StartFadeToBlack();
 
