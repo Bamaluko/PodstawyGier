@@ -7,12 +7,18 @@ public class Tower : MonoBehaviour
     public int Damage;
     public GameObject bullet;
     public float FireRate;                  // bulets shoot on 1 sec
-    public float nextTimeToFire = 0;
     public Transform shootPoint;
-    public float force;
-    Vector2 Direction = new Vector2(-1, 0);
+    public bool shotLeft = true;
+    public float bulletSpeed;
+
+    //[HideInInspector]
+    public float nextTimeToFire = 0;
     // Update is called once per frame
 
+    private void Start()
+    {
+
+    }
 
     void Update()
     {
@@ -25,11 +31,9 @@ public class Tower : MonoBehaviour
 
     void shoot()
     {
-        GameObject BulletIns = Instantiate(bullet, shootPoint.position, Quaternion.identity);
+        GameObject BulletIns = Instantiate(bullet, shootPoint.position, gameObject.transform.rotation);
         BulletIns.GetComponent<BulletScript>().damageValue = Damage;
-        if(BulletIns != null)
-        {
-            BulletIns.GetComponent<Rigidbody2D>().AddForce(force * Direction);
-        }   
+        BulletIns.GetComponent<BulletScript>().moveSpeed = bulletSpeed * -transform.localScale.x;
+        BulletIns.gameObject.transform.localScale = transform.localScale;
     }
 }

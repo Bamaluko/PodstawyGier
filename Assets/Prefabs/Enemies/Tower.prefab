@@ -395,7 +395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2459002100789994858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.039, y: 0.091, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -478,10 +478,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 2
   bullet: {fileID: 7539437806070710935, guid: 206a4e2e7943f7d45a3da574466025ef, type: 3}
-  FireRate: 0.8
-  nextTimeToFire: 1
+  FireRate: 0.5
   shootPoint: {fileID: 2459002100789994859}
-  force: 400
+  shotLeft: 0
+  bulletSpeed: 5
+  nextTimeToFire: 0
 --- !u!50 &8488207553416061758
 Rigidbody2D:
   serializedVersion: 4

@@ -6,6 +6,7 @@ public class BulletScript : MonoBehaviour
 {
     public int damageValue;
     public GameObject destroyEffect;
+    public float moveSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,7 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, 0);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
