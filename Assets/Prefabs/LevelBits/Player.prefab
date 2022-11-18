@@ -465,7 +465,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invincibilityLength: 1.5
   flashLength: 0.1
-  playerSprites: []
+  playerSprites:
+  - {fileID: 9092983749924564605}
+  - {fileID: 9092983750469171164}
   currentHealth: 6
   maxHealth: 6
 --- !u!114 &9092983751034568415
@@ -505,7 +507,7 @@ MonoBehaviour:
   bombPoint: {fileID: 9092983749778302229}
   bomb: {fileID: 7194540616736852048, guid: 735e50082a2d90742beff87fcb702c20, type: 3}
   canMove: 1
-  jumpBuffer: 0.15
+  jumpBuffer: 0.1
 --- !u!114 &7203472149105980818
 MonoBehaviour:
   m_ObjectHideFlags: 0

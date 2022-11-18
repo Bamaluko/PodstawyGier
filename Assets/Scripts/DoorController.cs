@@ -53,16 +53,14 @@ public class DoorController : MonoBehaviour
 
     public VideoClip videoClip2;
 
+    private float colorChanger = -0.004f;
+
 
     // Start is called before the first frame update
     void Start()
     {
         //Setting up the reference to the player.
         thePlayer = PlayerHealthController.instance.GetComponent<PlayerController>();
-        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
-        {
-            gameObject.GetComponentInChildren<SpriteRenderer>().color = Color.blue;
-        }
     }
 
     // Update is called once per frame
@@ -82,6 +80,21 @@ public class DoorController : MonoBehaviour
             //Moving player to the new area.
             thePlayer.transform.position = Vector3.MoveTowards(thePlayer.transform.position, exitPoint.position,
                 movePlayerSpeed * Time.deltaTime);
+        }
+
+        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().color = 
+                new Color(gameObject.GetComponentInChildren<SpriteRenderer>().color.r + colorChanger, 
+                gameObject.GetComponentInChildren<SpriteRenderer>().color.g + colorChanger, 
+                gameObject.GetComponentInChildren<SpriteRenderer>().color.b - colorChanger,
+                gameObject.GetComponentInChildren<SpriteRenderer>().color.a);
+
+            if(gameObject.GetComponentInChildren<SpriteRenderer>().color.b >= 2 ||
+                gameObject.GetComponentInChildren<SpriteRenderer>().color.b <= 1)
+            {
+                colorChanger = -colorChanger;
+            }
         }
     }
 
