@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1349b0cf06e379e4e84cf16854648bb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameScene: Area 1
+  newGameScene: Room1
   continueButton: {fileID: 1681489949}
   player: {fileID: 1649683359}
 --- !u!1 &744430199
