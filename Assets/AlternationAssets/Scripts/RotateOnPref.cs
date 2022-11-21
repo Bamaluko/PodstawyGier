@@ -7,6 +7,7 @@ public class RotateOnPref : MonoBehaviour
     // Start is called before the first frame update
     public string prefRequired;
     public float rotationSpeed;
+    public bool isRotate;          // for debugging, later we can delete this
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class RotateOnPref : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.HasKey(prefRequired))
+        if (PlayerPrefs.HasKey(prefRequired) || isRotate)
         {
             transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
         }

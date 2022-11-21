@@ -9,6 +9,7 @@ public class MoveVerticalyOnPref : MonoBehaviour
     public float movementSpeed;
     public Transform point1;
     public Transform point2;
+    public bool isOn;
 
     private Transform currentPoint;
 
@@ -22,7 +23,7 @@ public class MoveVerticalyOnPref : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.HasKey(prefRequired))
+        if (PlayerPrefs.HasKey(prefRequired) || isOn)
         {
             if (transform.position == point1.position)
             {
