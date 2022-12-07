@@ -500,6 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefRequired: rotate_square_platform
   rotationSpeed: 30
+  isRotate: 0
 --- !u!114 &3575330758837713175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,7 +513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c9b811a99a57bc47980227b89751079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefRequired: move_square_platforms
-  movementSpeed: 5
+  prefRequired: move_square_platform
+  movementSpeed: 3
   point1: {fileID: 243149286798041572}
   point2: {fileID: 765224259245694546}
+  isOn: 0

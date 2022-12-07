@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class HealthIncrease : MonoBehaviour
@@ -14,13 +15,13 @@ public class HealthIncrease : MonoBehaviour
     {
         if (PlayerPrefs.HasKey(healthPickupId))
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             PlayerHealthController player = other.GetComponentInParent<PlayerHealthController>();
 

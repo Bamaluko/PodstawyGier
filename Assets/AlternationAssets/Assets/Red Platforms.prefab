@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefRequired: red_platform_disappear
-  debugIsOn: 1
+  debugIsOn: 0
   timeToTogglePlatform: 2
 --- !u!114 &4517265043377395689
 MonoBehaviour:

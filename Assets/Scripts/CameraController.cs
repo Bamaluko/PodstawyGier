@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour
         //Cameras aspect is it's ratio width/height. aspect * halfHeight = halfWidth.
         halfWidth = halfHeight * Camera.main.aspect;
     }
-
+    
     // Update is called once per frame
     void Update()
     {

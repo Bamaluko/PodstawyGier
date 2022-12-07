@@ -67,6 +67,9 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove;
 
+    private CameraShaker shaker;
+    private bool jumpShake = false;
+
     //Jump buffer
     private float jumpBufferCounter = 0;
     public float jumpBuffer;
@@ -75,7 +78,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         abilities = GetComponent<PlayerAbillityTracker>();
-
+        shaker = FindObjectOfType<CameraShaker>();
         //In the future we will use it to, for example block player movement in some situations
         canMove = true;
     }
@@ -83,6 +86,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (shaker == null)
+        {
+            shaker = FindObjectOfType<CameraShaker>();
+        }
         if (canMove && Time.timeScale != 0)
         {
             if (dashRechargeCounter > 0)
@@ -135,6 +142,16 @@ public class PlayerController : MonoBehaviour
             //Checking if on the ground. Basically we draw a small circle around groundPoint and se if there is ground within it.
             isOnGround = Physics2D.OverlapCircle(groundPoint.position, .15f, whatIsGround);
 
+            if (theRB.velocity.y <= -30)
+            {
+                jumpShake = true;
+            }
+
+            if (isOnGround && jumpShake)
+            {
+                StartCoroutine(shaker.Shake(.3f, 1.0f));
+                jumpShake = false;
+            }
             //JUMPING
             //Jumping. We can jump after pressing the space bar when we are on the ground.
             if (Input.GetButtonDown("Jump"))
