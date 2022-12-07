@@ -91,6 +91,8 @@ public class UIController : MonoBehaviour
             {
                 fadingToBlack = false;
             }
+
+            fadeScreen.transform.localScale *= 1.02f;
         }
         else if (fadingFromBlack)
         {
@@ -99,9 +101,11 @@ public class UIController : MonoBehaviour
                 Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
 
             //When we are done, we stop changing color.
+            fadeScreen.transform.localScale /= 1.02f;
             if (fadeScreen.color.a == 0f)
             {
                 fadingFromBlack = false;
+                fadeScreen.transform.localScale = new Vector3(1, 9.313f, 1);
             }
         }
 
@@ -119,6 +123,7 @@ public class UIController : MonoBehaviour
 
     public void StartFadeToBlack()
     {
+        fadeScreen.transform.localScale *= 0.1f;
         fadingToBlack = true;
         fadingFromBlack = false;
     }

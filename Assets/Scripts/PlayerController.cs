@@ -74,6 +74,8 @@ public class PlayerController : MonoBehaviour
     private float jumpBufferCounter = 0;
     public float jumpBuffer;
 
+    public GameObject playerStompEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -150,6 +152,7 @@ public class PlayerController : MonoBehaviour
             if (isOnGround && jumpShake)
             {
                 StartCoroutine(shaker.Shake(.3f, 1.0f));
+                Instantiate(playerStompEffect, groundPoint.position, Quaternion.identity);
                 jumpShake = false;
             }
             //JUMPING

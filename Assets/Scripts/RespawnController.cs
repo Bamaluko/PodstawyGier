@@ -81,7 +81,11 @@ public class RespawnController : MonoBehaviour
 
         //This should make the coroutine wait a while.
         yield return new WaitForSeconds(waitToRespawn);
-
+        
+        UIController.instance.StartFadeToBlack();
+        
+        yield return new WaitForSeconds(0.5f);
+        
         //After some time we reload the active scene.
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
@@ -91,5 +95,7 @@ public class RespawnController : MonoBehaviour
 
         //Refilling the health bar.
         PlayerHealthController.instance.FillHealth();
+        
+        UIController.instance.StartFadeFromBlack();
     }
 }
