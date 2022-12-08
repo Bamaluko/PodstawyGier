@@ -22,6 +22,9 @@ public class EnemyHealthController : MonoBehaviour
 
         if (totalHealth <= 0)
         {
+            long enemiesKilled = long.Parse(PlayerPrefs.GetString("enemies_killed"));
+            enemiesKilled++;
+            PlayerPrefs.SetString("enemies_killed", enemiesKilled.ToString());
             if (deathEffect != null)
             {
                 Instantiate(deathEffect, transform.position, transform.rotation);

@@ -43,6 +43,8 @@ public class UIController : MonoBehaviour
     public GameObject pauseScreen;
 
     public TMP_Text healthText;
+    public TMP_Text enemiesKilledText;
+    public TMP_Text playerDeathsText;
 
 
     public GameObject choiceScreen;
@@ -138,6 +140,16 @@ public class UIController : MonoBehaviour
     {
         if (!pauseScreen.activeSelf)
         {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Killed enemies: ");
+            sb.Append(PlayerPrefs.GetString("enemies_killed"));
+            enemiesKilledText.text = sb.ToString();
+            
+            StringBuilder sb1 = new StringBuilder();
+            sb1.Append("Player deaths: ");
+            sb1.Append(PlayerPrefs.GetString("player_deaths"));
+            playerDeathsText.text = sb1.ToString();
+            
             pauseScreen.SetActive(true);
 
             //Time within the game won't flow anymore.

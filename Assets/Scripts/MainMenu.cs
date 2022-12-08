@@ -22,10 +22,16 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        PlayerPrefs.SetInt("canDoubleJump", 0);
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetFloat("PosX", 2);
+        PlayerPrefs.SetFloat("PosY", 22.5f);
+        PlayerPrefs.SetFloat("PosZ", 0);
+        PlayerPrefs.SetString("ContinueLevel", "Room1");
+        PlayerPrefs.SetInt("canDoubleJump", 0);
         SceneManager.LoadScene(newGameScene);
         PlayerPrefs.SetInt("max_health", 6);
+        PlayerPrefs.SetString("enemies_killed", "0");
+        PlayerPrefs.SetString("player_deaths", "0");
     }
 
     public void Continue()

@@ -104,6 +104,9 @@ public class PlayerHealthController : MonoBehaviour
             {
                 currentHealth = 0;
                 //gameObject.SetActive(false);
+                long playerDeaths = long.Parse(PlayerPrefs.GetString("player_deaths"));
+                playerDeaths++;
+                PlayerPrefs.SetString("player_deaths", playerDeaths.ToString());
                 RespawnController.instance.Respawn();
             }
             //If we are not dead yet, we apply invincibility for a brief moment.
