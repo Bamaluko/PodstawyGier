@@ -49,6 +49,11 @@ public class BulletController : MonoBehaviour
             other.GetComponent<EnemyHealthController>().DamageEnemy(damageAmount);
         }
 
+        if (other.tag == "Boss")
+        {
+            BossHealthController.instance.TakeDamage(damageAmount);
+        }
+
         //We make sure that we have our special efect assigned properly.
         if (impactEffect != null)
         {
