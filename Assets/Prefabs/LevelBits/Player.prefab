@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 9092983751034568385}
-  moveSpeed: 8
+  moveSpeed: 10
   jumpForce: 20
   groundPoint: {fileID: 9092983749199763055}
   whatIsGround:
@@ -509,7 +509,7 @@ MonoBehaviour:
   anim: {fileID: 9092983749924564603}
   shotToFire: {fileID: 2640202189778734614, guid: febc4d136b061d54ab7949cf1f895e7a, type: 3}
   shotPoint: {fileID: 9092983750419300951}
-  dashSpeed: 25
+  dashSpeed: 30
   dashTime: 0.2
   theSR: {fileID: 9092983749924564605}
   afterImage: {fileID: 3307146712678673430, guid: 1df34dc8c76678540803302e644fd78c, type: 3}
