@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8534784996498551538}
   - component: {fileID: 1933584813}
   - component: {fileID: 4517265043377395689}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 8534784997424257341}
   - component: {fileID: 8534784997424257340}
   - component: {fileID: 8534784997424257313}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Red Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -143,7 +143,7 @@ public class PlayerHealthController : MonoBehaviour
     public void MaxHealtIncrease(int points)
     {
         this.maxHealth += points;
-        this.currentHealth = this.maxHealth;
+        FillHealth();
         PlayerPrefs.SetInt("MaxHealth", this.maxHealth);
     }
 }

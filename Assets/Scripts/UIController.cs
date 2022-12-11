@@ -125,13 +125,14 @@ public class UIController : MonoBehaviour
 
     public void StartFadeToBlack()
     {
-        fadeScreen.transform.localScale *= 0.1f;
+        fadeScreen.transform.localScale *= .2f;
         fadingToBlack = true;
         fadingFromBlack = false;
     }
 
     public void StartFadeFromBlack()
     {
+        fadeScreen.transform.localScale = new Vector3(1.6f, 14, 1);
         fadingToBlack = false;
         fadingFromBlack = true;
     }

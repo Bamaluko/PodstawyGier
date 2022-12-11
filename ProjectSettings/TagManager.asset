@@ -21,7 +21,7 @@ TagManager:
   - Pickup
   - EnemyShot
   - Tower
-  - 
+  - Red Bridges
   - 
   - 
   - 
@@ -48,4 +48,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3425992205
+    locked: 0
+  - name: CrucialVisibility
+    uniqueID: 2106135547
     locked: 0
