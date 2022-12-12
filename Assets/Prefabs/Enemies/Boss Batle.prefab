@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3518939493058783376}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: Shot Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 3518939494496870513}
   - component: {fileID: 3518939494496870512}
   - component: {fileID: 3518939494496870511}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: The Boss
   m_TagString: Boss
   m_Icon: {fileID: 0}
