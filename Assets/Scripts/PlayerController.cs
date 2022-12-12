@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
 
     public Animator anim;
+    public Animator santaHat;
 
     public BulletController shotToFire;
     public Transform shotPoint;
@@ -79,6 +80,12 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (DateTime.Now.ToString("MM") != "12")
+        {
+            Destroy(santaHat.gameObject);
+            //Debug.Log(DateTime.Now.ToString("MM"));
+        }
+
         abilities = GetComponent<PlayerAbillityTracker>();
         shaker = FindObjectOfType<CameraShaker>();
         //In the future we will use it to, for example block player movement in some situations
@@ -173,6 +180,10 @@ public class PlayerController : MonoBehaviour
                     canDoubleJump = false;
 
                     anim.SetTrigger("doubleJump");
+                    if (santaHat != null)
+                    {
+                        santaHat.SetTrigger("doubleJump");
+                    }                    
                 }
 
                 theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
@@ -194,7 +205,11 @@ public class PlayerController : MonoBehaviour
                 if (standing.activeSelf)
                 {
                     Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
-                    anim.SetTrigger("shotFired");
+                    anim.SetTrigger("shotFired"); 
+                    if (santaHat != null)
+                    {
+                        santaHat.SetTrigger("shotFired");
+                    }
                 }
                 else if (ball.activeSelf && abilities.canDropBomb)
                 {
@@ -242,6 +257,11 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("isOnGround", isOnGround);
             anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
+            if (santaHat != null)
+            {
+                santaHat.SetBool("isOnGround", isOnGround);
+                santaHat.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
+            }
         }
         else if (ball.activeSelf)
         {
