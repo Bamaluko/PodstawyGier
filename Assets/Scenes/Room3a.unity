@@ -17486,6 +17486,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 719055798}
     m_Modifications:
+    - target: {fileID: 2319521031476678818, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.a
+      value: 0.0627451
+      objectReference: {fileID: 0}
     - target: {fileID: 2319521032462467490, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -17533,6 +17537,10 @@ PrefabInstance:
     - target: {fileID: 2319521032462467493, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}
       propertyPath: m_Name
       value: Fog
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319521032462467493, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}

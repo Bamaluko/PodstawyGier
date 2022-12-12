@@ -15,7 +15,7 @@ public class AcidDamage : MonoBehaviour
         {
             if (!PlayerPrefs.HasKey(requiredPref))
             {
-                PlayerHealthController.instance.DamagePlayer(points);
+                PlayerHealthController.instance.DamagePlayer(points, true);
             }
             
         }

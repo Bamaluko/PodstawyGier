@@ -92,10 +92,10 @@ public class PlayerHealthController : MonoBehaviour
         }
     }
 
-    public void DamagePlayer(int damageAmount)
+    public void DamagePlayer(int damageAmount, bool damageAnyway = false)
     {
         //All the damage is applied only when we have our invincibility off (we didn't take damage for a little while).
-        if (invincibilityCounter <= 0)
+        if (invincibilityCounter <= 0 || damageAnyway)
         {
             currentHealth -= damageAmount;
 

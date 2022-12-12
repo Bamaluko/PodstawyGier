@@ -19,6 +19,8 @@ public class DamagePlayer : MonoBehaviour
 
     public int damageAmount = 1;
 
+    public bool damageAnyway = false;
+
     private void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -37,7 +39,7 @@ public class DamagePlayer : MonoBehaviour
 
     void DealDamage()
     {
-        PlayerHealthController.instance.DamagePlayer(damageAmount);
+        PlayerHealthController.instance.DamagePlayer(damageAmount, damageAnyway);
 
         //If this object is to be destroyed on damaging player, then we do it here and instantiate destroy effect.
         if (destroyOnDamage)
