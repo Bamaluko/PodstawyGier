@@ -37,5 +37,11 @@ public class BulletScript : MonoBehaviour
         }
         
     }
+    
+    private void OnBecameInvisible()
+    {
+        //Destroy object.
+        Destroy(gameObject);
+    }
 
 }

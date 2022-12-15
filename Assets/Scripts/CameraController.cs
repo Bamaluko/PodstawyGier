@@ -51,10 +51,12 @@ public class CameraController : MonoBehaviour
                 //Big maths. Setting position of the camera. We want the camera to follow the player, but we also want it to
                 //get stuck on level boundaries. Mathf.Clamp returns minimum or maximu value given, if the actual one is lower
                 //than minimum or higher tham maximum.
+
                 transform.position = new Vector3(
                     Mathf.Clamp(player.transform.position.x, boundsBox.bounds.min.x + halfWidth, boundsBox.bounds.max.x - halfWidth),
                     Mathf.Clamp(player.transform.position.y, boundsBox.bounds.min.y + halfHeight, boundsBox.bounds.max.y - halfHeight),
                     transform.position.z);
+                    
             }
             else
             {
@@ -67,5 +69,6 @@ public class CameraController : MonoBehaviour
             vitalActive = false;
         }
     }
+    
 }
 

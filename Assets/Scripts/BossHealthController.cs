@@ -3,21 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class BossHealthController : MonoBehaviour
 {
-    public static BossHealthController instance;
+    /* DESCRIPTION OF ALL PROPERTIES
+     * 
+     * instance - static reference to this object for easy access.
+     * 
+     * bossHealthSlider - reference to the slider displaying bosses current health.
+     * 
+     * currentHealth - current health of the boss.
+     * 
+     * theBoss - reference to the boss battle controller.
+     * 
+    */
 
-    private void Awake()
-    {
-        instance = this;
-    }
+    public static BossHealthController instance;
 
     public Slider bossHealthSlider;
 
     public int currentHealth = 30;
 
     public BossBattle theBoss;
+
+    public void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -26,18 +37,17 @@ public class BossHealthController : MonoBehaviour
         bossHealthSlider.value = currentHealth;
     }
 
-    // Update is called once per frame
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
 
-        if (currentHealth <= 0)
+        if(currentHealth <= 0)
         {
             currentHealth = 0;
 
             theBoss.EndBattle();
+            
         }
-
         bossHealthSlider.value = currentHealth;
     }
 }

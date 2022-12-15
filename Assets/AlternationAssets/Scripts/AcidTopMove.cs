@@ -28,12 +28,12 @@ public class AcidTopMove : MonoBehaviour
         {
             if (counter < moveTime && !UIController.instance.pauseScreen.gameObject.activeSelf)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y - 0.001f, transform.position.z);
+                transform.position = new Vector3(transform.position.x, transform.position.y - 0.2f * Time.deltaTime, transform.position.z);
                 counter += Time.deltaTime;
             }
             else if (counter < 2 * moveTime && !UIController.instance.pauseScreen.gameObject.activeSelf && transform.position.y < oryginalSpot.y)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y + 0.001f, transform.position.z);
+                transform.position = new Vector3(transform.position.x, transform.position.y + 0.2f * Time.deltaTime, transform.position.z);
                 counter += Time.deltaTime;
             }
             else if(!UIController.instance.pauseScreen.gameObject.activeSelf)

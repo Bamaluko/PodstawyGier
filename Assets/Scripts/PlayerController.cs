@@ -38,7 +38,6 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
 
     public Animator anim;
-    public Animator santaHat;
 
     public BulletController shotToFire;
     public Transform shotPoint;
@@ -67,8 +66,7 @@ public class PlayerController : MonoBehaviour
     private PlayerAbillityTracker abilities;
 
     public bool canMove;
-
-    private CameraShaker shaker;
+    
     private bool jumpShake = false;
 
     //Jump buffer
@@ -76,18 +74,13 @@ public class PlayerController : MonoBehaviour
     public float jumpBuffer;
 
     public GameObject playerStompEffect;
+    public GameObject normalStomp;
+    private bool stompOnFall = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (DateTime.Now.ToString("MM") != "12")
-        {
-            Destroy(santaHat.gameObject);
-            //Debug.Log(DateTime.Now.ToString("MM"));
-        }
-
         abilities = GetComponent<PlayerAbillityTracker>();
-        shaker = FindObjectOfType<CameraShaker>();
         //In the future we will use it to, for example block player movement in some situations
         canMove = true;
     }
@@ -95,10 +88,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (shaker == null)
-        {
-            shaker = FindObjectOfType<CameraShaker>();
-        }
         if (canMove && Time.timeScale != 0)
         {
             if (dashRechargeCounter > 0)
@@ -155,12 +144,21 @@ public class PlayerController : MonoBehaviour
             {
                 jumpShake = true;
             }
+            else if (theRB.velocity.y <= -5)
+            {
+                stompOnFall = true;
+            }
+            
 
             if (isOnGround && jumpShake)
             {
-                StartCoroutine(shaker.Shake(.3f, 1.0f));
                 Instantiate(playerStompEffect, groundPoint.position, Quaternion.identity);
                 jumpShake = false;
+            }
+            else if (isOnGround && stompOnFall)
+            {
+                Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity);
+                stompOnFall = false;
             }
             //JUMPING
             //Jumping. We can jump after pressing the space bar when we are on the ground.
@@ -169,10 +167,16 @@ public class PlayerController : MonoBehaviour
                 jumpBufferCounter = jumpBuffer;
             }
 
+            if (theRB.velocity.y > 6 && canDoubleJump && !Input.GetButton("Jump"))
+            {
+                theRB.velocity = new Vector2(theRB.velocity.x, 6);
+            }
+
             if ((!Input.GetButtonUp("Jump") && jumpBufferCounter > 0) && (isOnGround || (canDoubleJump && abilities.canDoubleJump && Input.GetButtonDown("Jump"))))
             {
                 if (isOnGround)
                 {
+                    Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity); 
                     canDoubleJump = true;
                 }
                 else
@@ -180,10 +184,6 @@ public class PlayerController : MonoBehaviour
                     canDoubleJump = false;
 
                     anim.SetTrigger("doubleJump");
-                    if (santaHat != null)
-                    {
-                        santaHat.SetTrigger("doubleJump");
-                    }                    
                 }
 
                 theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
@@ -206,10 +206,6 @@ public class PlayerController : MonoBehaviour
                 {
                     Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
                     anim.SetTrigger("shotFired"); 
-                    if (santaHat != null)
-                    {
-                        santaHat.SetTrigger("shotFired");
-                    }
                 }
                 else if (ball.activeSelf && abilities.canDropBomb)
                 {
@@ -257,11 +253,6 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("isOnGround", isOnGround);
             anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
-            if (santaHat != null)
-            {
-                santaHat.SetBool("isOnGround", isOnGround);
-                santaHat.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
-            }
         }
         else if (ball.activeSelf)
         {

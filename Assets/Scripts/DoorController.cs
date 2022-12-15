@@ -126,11 +126,10 @@ public class DoorController : MonoBehaviour
         {
             ChoiceWindow();
         }
-
         yield return new WaitForSeconds(0.1f);
-
         if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
         {
+            Debug.Log("If entered.");
             //The player is exiting the area now.
             playerExiting = false;
 
@@ -140,13 +139,14 @@ public class DoorController : MonoBehaviour
 
             //Now the player can move.
             thePlayer.canMove = true;
-
+            Debug.Log("If finished.");
             yield break;
         }
 
         //We slowly cover the screen.
         UIController.instance.StartFadeToBlack();
-
+        yield return new WaitForSeconds(1.0f);
+        
         VitalPoint point = FindObjectOfType<VitalPoint>();
         if (point != null)
         {
@@ -154,16 +154,13 @@ public class DoorController : MonoBehaviour
         }
 
         //Wait fo 1.5.
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
 
         //We set new spawn point.
         RespawnController.instance.setSpawn(exitPoint.position);
 
         //We enable the animator again, so that it works as usual.
         thePlayer.anim.enabled = true;
-
-        //We start slowly uncovering the scene.
-        UIController.instance.StartFadeFromBlack();
 
         PlayerPrefs.SetString("ContinueLevel", levelToLoad);
         PlayerPrefs.SetFloat("PosX", exitPoint.position.x);
@@ -172,6 +169,9 @@ public class DoorController : MonoBehaviour
 
         //New scene is loaded.
         SceneManager.LoadScene(levelToLoad);
+
+        //We start slowly uncovering the scene.
+        UIController.instance.StartFadeFromBlack();
 
         thePlayer.transform.position = new Vector3(exitPoint.position.x, exitPoint.position.y, exitPoint.position.z);
 

@@ -84,7 +84,7 @@ public class RespawnController : MonoBehaviour
         
         UIController.instance.StartFadeToBlack();
         
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         
         //After some time we reload the active scene.
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

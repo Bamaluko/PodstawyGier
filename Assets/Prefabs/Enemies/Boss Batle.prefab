@@ -549,7 +549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: 473}
+  m_AnchoredPosition: {x: 0, y: 471}
   m_SizeDelta: {x: 249.6164, y: 38.3979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3518939493883120671
@@ -582,8 +582,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: THE PHANTOM
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d5e77713eec343449f90f63878f78d1, type: 2}
-  m_sharedMaterial: {fileID: 7462947868450046082, guid: 4d5e77713eec343449f90f63878f78d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d94782f171558bc43be66182b1662f67, type: 2}
+  m_sharedMaterial: {fileID: 7462947868450046082, guid: d94782f171558bc43be66182b1662f67, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -607,12 +607,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.1
-  m_fontSizeBase: 36
+  m_fontSize: 88.95
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 100
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -643,7 +643,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -141.4035, y: -31.98413, z: -202.005, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

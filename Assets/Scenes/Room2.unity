@@ -4501,7 +4501,7 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7132,6 +7132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bccfe23931967478668290cd2022bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 1558785729322413476}
 --- !u!1001 &978688923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18313,7 +18314,7 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

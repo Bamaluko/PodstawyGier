@@ -125,7 +125,7 @@ public class UIController : MonoBehaviour
 
     public void StartFadeToBlack()
     {
-        fadeScreen.transform.localScale *= .2f;
+        fadeScreen.transform.localScale *= .5f;
         fadingToBlack = true;
         fadingFromBlack = false;
     }
@@ -186,6 +186,7 @@ public class UIController : MonoBehaviour
     {
         if (!choiceScreen.activeSelf)
         {
+            Time.timeScale = 0;
             //Activate the choice screen.
             choiceScreen.SetActive(true);
 
@@ -207,6 +208,7 @@ public class UIController : MonoBehaviour
         } 
         else
         {
+            Time.timeScale = 1;
             choiceScreen.SetActive(false);
         }
     }

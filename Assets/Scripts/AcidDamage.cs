@@ -9,15 +9,19 @@ public class AcidDamage : MonoBehaviour
 
     public string requiredPref;
 
-    void OnCollisionEnter2D(Collision2D collision)      // Mozna dodac OnCollisionStay2D i wtedy zadawac damage co okreslony przedzial czasu
+    void OnTriggerEnter2D(Collider2D collision)      // Mozna dodac OnCollisionStay2D i wtedy zadawac damage co okreslony przedzial czasu
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             if (!PlayerPrefs.HasKey(requiredPref))
             {
                 PlayerHealthController.instance.DamagePlayer(points, true);
             }
-            
+
+            if (FindObjectOfType<AcidChase>() != null)
+            {
+                FindObjectOfType<AcidChase>().enabled = false;
+            }
         }
     }
 }
