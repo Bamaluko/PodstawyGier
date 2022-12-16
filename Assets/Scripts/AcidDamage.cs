@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,15 @@ public class AcidDamage : MonoBehaviour
     public int points;
 
     public string requiredPref;
+
+    private void Start()
+    {
+        if (!PlayerPrefs.HasKey(requiredPref))
+        {
+            GetComponent<Collider2D>().isTrigger = false;
+        }
+        
+    }
 
     void OnTriggerEnter2D(Collider2D collision)      // Mozna dodac OnCollisionStay2D i wtedy zadawac damage co okreslony przedzial czasu
     {

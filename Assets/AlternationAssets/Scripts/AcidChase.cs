@@ -9,6 +9,7 @@ public class AcidChase : MonoBehaviour
     public TilemapDestructor destructor;
     
     public float speed;
+    public float maxHeight;
     private bool isChasing;
     private PlayerController player;
 
@@ -21,12 +22,11 @@ public class AcidChase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y + (speed * Time.deltaTime), transform.position.z);
-        
-        if(player.transform.position.y - transform.position.y - 5 > 0)
+        if (transform.position.y >= maxHeight)
         {
-            transform.position = new Vector3(transform.position.x, player.transform.position.y + 5, transform.position.z);
+            enabled = false;
         }
+        transform.position = new Vector3(transform.position.x, transform.position.y + (speed * Time.deltaTime), transform.position.z);
     }
 
     private void OnTriggerEnter2D(Collider2D col)

@@ -78,8 +78,9 @@ public class DoorController : MonoBehaviour
         if (playerExiting)
         {
             //Moving player to the new area.
-            thePlayer.transform.position = Vector3.MoveTowards(thePlayer.transform.position, exitPoint.position,
-                movePlayerSpeed * Time.deltaTime);
+            thePlayer.transform.position = Vector3.MoveTowards(thePlayer.transform.position,
+                new Vector3(transform.position.x - 20 * transform.localScale.x, transform.position.y,
+                    transform.position.z), movePlayerSpeed * Time.deltaTime);
         }
 
         if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))

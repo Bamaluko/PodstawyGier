@@ -4421,7 +4421,8 @@ GameObject:
   - component: {fileID: 738664548}
   - component: {fileID: 738664547}
   - component: {fileID: 738664553}
-  m_Layer: 0
+  - component: {fileID: 738664554}
+  m_Layer: 3
   m_Name: Tilemap Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4455,7 +4456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270d9816bb8d8a245a577ba4274cc667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredPref: no_damage_acid
+  requiredPref: freeze_acid
 --- !u!114 &738664548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4469,7 +4470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 100
-  requiredPref: no_damage_acid
+  requiredPref: freeze_acid
 --- !u!50 &738664549
 Rigidbody2D:
   serializedVersion: 4
@@ -4501,7 +4502,7 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5901,6 +5902,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTime: 0.5
+--- !u!114 &738664554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738664545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b4e57d5fd9873449ee160f2aaf0d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefRequired: vaporize_acid
 --- !u!1 &745384641
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,7 +7146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bccfe23931967478668290cd2022bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1558785729322413476}
 --- !u!1001 &978688923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10530,7 +10543,8 @@ GameObject:
   - component: {fileID: 1356357147}
   - component: {fileID: 1356357146}
   - component: {fileID: 1356357145}
-  m_Layer: 0
+  - component: {fileID: 1356357148}
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18289,7 +18303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270d9816bb8d8a245a577ba4274cc667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredPref: no_damage_acid
+  requiredPref: freeze_acid
 --- !u!114 &1356357146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18303,7 +18317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 20
-  requiredPref: no_damage_acid
+  requiredPref: freeze_acid
 --- !u!19719996 &1356357147
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -18314,12 +18328,25 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1356357148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356357141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b4e57d5fd9873449ee160f2aaf0d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefRequired: vaporize_acid
 --- !u!1001 &1359354988
 PrefabInstance:
   m_ObjectHideFlags: 0
