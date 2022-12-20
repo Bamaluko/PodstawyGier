@@ -7,11 +7,10 @@ public class BulletScript : MonoBehaviour
     public int damageValue;
     public GameObject destroyEffect;
     public float moveSpeed;
-
-    // Start is called before the first frame update
-    void Start()
+    private void OnBecameInvisible()
     {
-
+        //Destroy object.
+        Destroy(gameObject);
     }
 
     // Update is called once per frame
@@ -35,15 +34,7 @@ public class BulletScript : MonoBehaviour
             }
             Destroy(this.gameObject);
 
-            AudioManager.instance.PlaySFX(3);
+            //AudioManager.instance.PlaySFX(3);
         }
-        
     }
-    
-    private void OnBecameInvisible()
-    {
-        //Destroy object.
-        Destroy(gameObject);
-    }
-
 }

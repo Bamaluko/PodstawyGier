@@ -97,7 +97,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player_Ball_move.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_Ball_move.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player_DoubleJump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_DoubleJump.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player_DoubleJump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_DoubleJump.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main Mixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main Mixer.mixer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Main Mixer.mixer.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main Mixer.mixer.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/After-Image Effect.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/After-Image Effect.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Bomb.prefab" afterDir="false" />
@@ -140,15 +139,9 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Area 2.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Boss1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room1.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room2.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3a.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room3a.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" afterDir="false" />
@@ -304,6 +297,7 @@
       <workItem from="1671011753275" duration="5365000" />
       <workItem from="1671119099051" duration="7050000" />
       <workItem from="1671191940038" duration="3230000" />
+      <workItem from="1671563054920" duration="129000" />
     </task>
     <servers />
   </component>
