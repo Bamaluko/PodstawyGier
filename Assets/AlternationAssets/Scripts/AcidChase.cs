@@ -39,6 +39,8 @@ public class AcidChase : MonoBehaviour
             enabled = true;
             destructor.Destruction();
             isChasing = true;
+
+            AudioManager.instance.PlayBossMusic();
         }
     }
 }

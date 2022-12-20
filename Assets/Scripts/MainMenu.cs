@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager.instance.PlayMainMenuMusic();
         if (PlayerPrefs.HasKey("ContinueLevel"))
         {
             continueButton.SetActive(true);

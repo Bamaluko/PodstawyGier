@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -33,6 +35,15 @@ public class CameraController : MonoBehaviour
         halfHeight = Camera.main.orthographicSize;
         //Cameras aspect is it's ratio width/height. aspect * halfHeight = halfWidth.
         halfWidth = halfHeight * Camera.main.aspect;
+
+        if (!PlayerPrefs.HasKey("Boss1") && SceneManager.GetActiveScene().name == "Boss1")
+        {
+            AudioManager.instance.StopMusic();
+        } else
+        {
+            AudioManager.instance.PlayLevelMusic();
+        }
+        
     }
     
     // Update is called once per frame

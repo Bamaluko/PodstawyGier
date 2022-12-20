@@ -113,6 +113,8 @@ public class PlayerHealthController : MonoBehaviour
             else
             {
                 invincibilityCounter = invincibilityLength;
+
+                AudioManager.instance.PlaySFX(11);
             }
 
             //Updating UI after taking damage.

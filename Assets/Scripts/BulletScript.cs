@@ -34,6 +34,8 @@ public class BulletScript : MonoBehaviour
                 Instantiate(destroyEffect, transform.position, transform.rotation);
             }
             Destroy(this.gameObject);
+
+            AudioManager.instance.PlaySFX(3);
         }
         
     }

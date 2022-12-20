@@ -47,6 +47,8 @@ public class AbillityUnlock : MonoBehaviour
 
             PlayerPrefs.SetString(ID, ID);
             Destroy(gameObject);
+
+            AudioManager.instance.PlaySFX(5);
         }
     }
 }

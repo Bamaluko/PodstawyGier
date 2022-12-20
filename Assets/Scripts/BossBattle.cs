@@ -87,6 +87,7 @@ public class BossBattle : MonoBehaviour
 
         shotCounter = timeBetweenShots1;
         shaker = FindObjectOfType<CameraShaker>();
+        AudioManager.instance.PlayBossMusic();
     }
 
     // Update is called once per frame
@@ -177,6 +178,7 @@ public class BossBattle : MonoBehaviour
                         {
                             theBoss.gameObject.SetActive(false);
                             inactiveCounter = inactiveTime;
+                            
                         }
                     }
                     else if (inactiveCounter > 0)
@@ -250,6 +252,7 @@ public class BossBattle : MonoBehaviour
                 Destroy(bb.gameObject);
             }
         }
-        
+
+        AudioManager.instance.PlayLevelMusic();
     }
 }

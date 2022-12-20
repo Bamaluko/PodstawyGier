@@ -178,12 +178,16 @@ public class PlayerController : MonoBehaviour
                 {
                     Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity); 
                     canDoubleJump = true;
+
+                    AudioManager.instance.PlaySFX(12);
                 }
                 else
                 {
                     canDoubleJump = false;
 
                     anim.SetTrigger("doubleJump");
+
+                    AudioManager.instance.PlaySFX(9);
                 }
 
                 theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
@@ -205,11 +209,15 @@ public class PlayerController : MonoBehaviour
                 if (standing.activeSelf)
                 {
                     Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
-                    anim.SetTrigger("shotFired"); 
+                    anim.SetTrigger("shotFired");
+
+                    AudioManager.instance.PlaySFX(14);
                 }
                 else if (ball.activeSelf && abilities.canDropBomb)
                 {
                     Instantiate(bomb, bombPoint.position, bombPoint.rotation);
+
+                    AudioManager.instance.PlaySFX(13);
                 }
             }
 
