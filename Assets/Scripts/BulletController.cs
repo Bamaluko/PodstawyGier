@@ -64,6 +64,7 @@ public class BulletController : MonoBehaviour
             Instantiate(impactEffect, transform.position, Quaternion.identity);
         }
         //After colision detected and special effect played: destroy the bullet!
+        AudioManager.instance.PlaySFX(3);
         Destroy(gameObject);
     }
 

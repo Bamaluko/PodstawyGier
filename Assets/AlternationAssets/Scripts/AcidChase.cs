@@ -41,6 +41,7 @@ public class AcidChase : MonoBehaviour
             isChasing = true;
 
             AudioManager.instance.PlayBossMusic();
+            AudioManager.instance.PlaySFX(8);
         }
     }
 }

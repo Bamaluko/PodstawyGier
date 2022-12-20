@@ -178,16 +178,13 @@ public class PlayerController : MonoBehaviour
                 {
                     Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity); 
                     canDoubleJump = true;
-
-                    AudioManager.instance.PlaySFX(12);
                 }
                 else
                 {
                     canDoubleJump = false;
 
                     anim.SetTrigger("doubleJump");
-
-                    AudioManager.instance.PlaySFX(9);
+                    
                 }
 
                 theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);

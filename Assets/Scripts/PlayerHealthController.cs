@@ -108,6 +108,7 @@ public class PlayerHealthController : MonoBehaviour
                 playerDeaths++;
                 PlayerPrefs.SetString("player_deaths", playerDeaths.ToString());
                 RespawnController.instance.Respawn();
+                AudioManager.instance.PlaySFX(8);
             }
             //If we are not dead yet, we apply invincibility for a brief moment.
             else

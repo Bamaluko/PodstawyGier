@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PodstawyGier/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PodstawyGier/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Acid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Acid.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Disapearing Platform.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Disapearing Platform.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Red Platforms.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Red Platforms.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Square Platform.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Square Platform.prefab.meta" afterDir="false" />
@@ -98,6 +97,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player_Ball_move.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_Ball_move.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player_DoubleJump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_DoubleJump.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player_DoubleJump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_DoubleJump.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main Mixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main Mixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main Mixer.mixer.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main Mixer.mixer.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/After-Image Effect.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/After-Image Effect.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Bomb.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Bomb.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Bomb.prefab.meta" afterDir="false" />
@@ -109,7 +110,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Health Pickup Effect.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Health Pickup Effect.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Player_Shot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Player_Shot.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Player_Shot.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/Player_Shot.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/WalkerDeath.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/WalkerDeath.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/fire-ball_1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/fire-ball_1.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/fire-ball_1.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/fire-ball_1.controller.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/fireBall.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/fireBall.prefab.meta" afterDir="false" />
@@ -118,7 +118,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Activator.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Activator.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Batle.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Batle.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Shot.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Shot.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy Flier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy Flier.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Kill Zone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Kill Zone.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Kill Zone.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Kill Zone.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Tower.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Tower.prefab.meta" afterDir="false" />
@@ -148,10 +147,14 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room1.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room2.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3a.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room3a.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BombController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BombController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BombController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BombController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BossActivator.cs" afterDir="false" />
@@ -200,7 +203,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Font/Pixelnauts SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Font/Pixelnauts SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>

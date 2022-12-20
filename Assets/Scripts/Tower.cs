@@ -22,7 +22,8 @@ public class Tower : MonoBehaviour
 
     void Update()
     {
-        if(Time.time > nextTimeToFire)
+        if (Time.time > nextTimeToFire && Vector3.Distance(PlayerHealthController.instance.transform.position,
+                gameObject.transform.position) < 30) 
         {
             nextTimeToFire = Time.time + 1 / FireRate;
             shoot();

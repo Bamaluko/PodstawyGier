@@ -53,4 +53,11 @@ public class BossBullet : MonoBehaviour
         Destroy(gameObject);
         AudioManager.instance.PlaySFXAdjusted(3);
     }
+    
+    //Special method triggered whenever object escapes the field of vision (camera).
+    private void OnBecameInvisible()
+    {
+        //Destroy object.
+        Destroy(gameObject);
+    }
 }

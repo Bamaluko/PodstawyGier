@@ -141,7 +141,7 @@ public class BossBattle : MonoBehaviour
             {
                 if (targetPoint == null)
                 {
-                    targetPoint = theBoss;
+                    targetPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
                     fadeCounter = fadeoutTime;
                     anim.SetTrigger("vanish");
                 }

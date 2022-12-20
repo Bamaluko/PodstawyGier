@@ -17,7 +17,8 @@ public class CheckpointController : MonoBehaviour
             PlayerPrefs.SetFloat("PosY", transform.position.y);
             PlayerPrefs.SetFloat("PosZ", transform.position.z);
 
-            Instantiate(healEffect, transform.position, transform.rotation);
+            Instantiate(healEffect, transform.position, transform.rotation);            
+            AudioManager.instance.PlaySFX(5);
         }
     }
 }
