@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AbillityUnlock : MonoBehaviour
 {
     public bool unlockDoubleJump, unlockDash, unlockBecomeBall, unlockDropBomb;
     public string ID;
+    public string unlockedMessage;
+    public TMP_Text unlockedText;
 
     public void Start()
     {
@@ -46,6 +49,15 @@ public class AbillityUnlock : MonoBehaviour
             }
 
             PlayerPrefs.SetString(ID, ID);
+
+            unlockedText.transform.parent.SetParent(null);
+            unlockedText.transform.position = transform.position;
+
+            unlockedText.text = unlockedMessage;
+            unlockedText.gameObject.SetActive(true);
+
+            Destroy(unlockedText.transform.parent.gameObject, 5f);
+
             Destroy(gameObject);
 
             AudioManager.instance.PlaySFX(5);

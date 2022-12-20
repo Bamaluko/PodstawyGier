@@ -2267,8 +2267,8 @@ MonoBehaviour:
   alternative2: red_platform_fall
   buttonText1: Red platforms will disappear when you touch them
   buttonText2: Red platforms will fall when you stand on them
-  videoClip1: {fileID: 32900000, guid: c33ce4a8a472f1844b6f604fc3f403e7, type: 3}
-  videoClip2: {fileID: 32900000, guid: dad8c9f94de7b49458a67f7bf6b0b854, type: 3}
+  videoClip1: {fileID: 32900000, guid: cdcb81b3f2460764ea0a3ef24de04b8f, type: 3}
+  videoClip2: {fileID: 32900000, guid: 4ea6b2bba0ca70b4eab50c05970db771, type: 3}
 --- !u!61 &431445793
 BoxCollider2D:
   m_ObjectHideFlags: 0
