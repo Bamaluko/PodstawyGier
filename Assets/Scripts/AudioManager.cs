@@ -19,7 +19,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public AudioSource mainMenuMusic, levelMusic, bossMusic;
+    public AudioSource mainMenuMusic, levelMusic, bossMusic, elevatorMusic;
 
     public AudioSource[] sfx;
 
@@ -36,9 +36,20 @@ public class AudioManager : MonoBehaviour
         {
             bossMusic.Stop();
             mainMenuMusic.Stop();
+            elevatorMusic.Stop();
             levelMusic.Play();
         }
-        
+    }
+
+    public void PlayElevatorMusic()
+    {
+        if (!elevatorMusic.isPlaying)
+        {
+            bossMusic.Stop();
+            mainMenuMusic.Stop();
+            levelMusic.Stop();
+            elevatorMusic.Play();
+        }
     }
 
     public void PlayBossMusic()
@@ -64,17 +75,5 @@ public class AudioManager : MonoBehaviour
     {
         sfx[sfxToPlay].pitch = Random.Range(.8f, 1.2f);
         sfx[sfxToPlay].Play();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
