@@ -714,6 +714,7 @@ GameObject:
   - component: {fileID: 7311361701930757083}
   - component: {fileID: 7311361701930756132}
   - component: {fileID: 7311361701930756133}
+  - component: {fileID: 239576608}
   m_Layer: 5
   m_Name: Fade Screen
   m_TagString: Untagged
@@ -730,7 +731,7 @@ RectTransform:
   m_GameObject: {fileID: 7311361701930756134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 9.313, z: 1}
+  m_LocalScale: {x: 2, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7311361702536254103}
@@ -738,7 +739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.005493164}
+  m_AnchoredPosition: {x: 3044, y: 0.005493164}
   m_SizeDelta: {x: 0, y: -964.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7311361701930756132
@@ -779,6 +780,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &239576608
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7311361701930756134}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 733ec92d1083bbe4cba0b3d2dc4a1dc0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7311361702010073194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,6 +1077,7 @@ MonoBehaviour:
   buttonText2TMP: {fileID: 8834450947641947608}
   vid1: {fileID: 6339661640902821861}
   vid2: {fileID: 3934129235505091155}
+  FadeScreenAnim: {fileID: 239576608}
 --- !u!1 &7311361702582838192
 GameObject:
   m_ObjectHideFlags: 0

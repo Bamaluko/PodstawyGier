@@ -32,6 +32,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Scripts/TilemapDestructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Scripts/TilemapDestructor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Scripts/WaterOnPref.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Scripts/WaterOnPref.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/Desapearing_Platforms.mp4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/Desapearing_Platforms.mp4.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/Desapearing_acid.mp4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/Desapearing_acid.mp4.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/Falling_platforms.mp4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/Falling_platforms.mp4.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/Freezing_acid.mp4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/Freezing_acid.mp4.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/no_acid_bridges.mp4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/no_acid_bridges.mp4.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/no_damage_acid.mp4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/no_damage_acid.mp4.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/square_platforms_move.mp4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Visualizations/square_platforms_move.mp4.meta" afterDir="false" />
@@ -116,6 +120,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/tower_fireball.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects and projectiles/tower_fireball.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Activator.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Activator.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Batle.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Batle.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Shot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Shot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Shot.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Boss Shot.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Kill Zone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Kill Zone.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Kill Zone.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Kill Zone.prefab.meta" afterDir="false" />
@@ -129,6 +134,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Destructible Block.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Destructible Block.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Grid Template.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Grid Template.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Health Gem.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Health Gem.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/UI Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/UI Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/santa-hatV2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/santa-hatV2.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Button.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button.prefab.meta" afterDir="false" />
@@ -139,9 +145,13 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Area 2.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Boss1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room1.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room2.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" afterDir="false" />
@@ -209,6 +219,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/AlternationAssets/Scripts/AcidTopMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AlternationAssets/Scripts/FallOnPref.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AlternationAssets/Scripts/TilemapDestructor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RestartGame.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -298,6 +309,8 @@
       <workItem from="1671119099051" duration="7050000" />
       <workItem from="1671191940038" duration="3230000" />
       <workItem from="1671563054920" duration="129000" />
+      <workItem from="1671613994736" duration="1205000" />
+      <workItem from="1673279660649" duration="10137000" />
     </task>
     <servers />
   </component>

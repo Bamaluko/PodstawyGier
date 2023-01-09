@@ -60,6 +60,8 @@ public class UIController : MonoBehaviour
     public VideoPlayer vid1;
     public VideoPlayer vid2;
 
+    public Animator FadeScreenAnim;
+
     private void Awake()
     {
         if (instance == null)
@@ -85,30 +87,21 @@ public class UIController : MonoBehaviour
         if (fadingToBlack)
         {
             //Will move the alpha value towards 100% in given time.
-            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b,
-                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            // fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b,
+            //      Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
 
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, 1f);
             //When we are done, we stop changing color.
             if (fadeScreen.color.a == 1f)
             {
                 fadingToBlack = false;
             }
-
-            fadeScreen.transform.localScale *= 1.02f;
         }
         else if (fadingFromBlack)
         {
             //Will move the alpha value towards 100% in given time.
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b,
                 Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
-
-            //When we are done, we stop changing color.
-            fadeScreen.transform.localScale /= 1.02f;
-            if (fadeScreen.color.a == 0f)
-            {
-                fadingFromBlack = false;
-                fadeScreen.transform.localScale = new Vector3(1, 9.313f, 1);
-            }
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -125,14 +118,13 @@ public class UIController : MonoBehaviour
 
     public void StartFadeToBlack()
     {
-        fadeScreen.transform.localScale *= .5f;
         fadingToBlack = true;
         fadingFromBlack = false;
+        FadeScreenAnim.SetTrigger("trigger");
     }
 
     public void StartFadeFromBlack()
     {
-        fadeScreen.transform.localScale = new Vector3(1.6f, 14, 1);
         fadingToBlack = false;
         fadingFromBlack = true;
     }

@@ -169,5 +169,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   theRB: {fileID: 5946048446795354711}
-  damageAmount: 1
+  damageAmount: 2
   impactEffect: {fileID: 2850065786240644843, guid: 46778094772a1a647a0fc42c5e7f0329, type: 3}

@@ -77,6 +77,7 @@ public class DoorController : MonoBehaviour
 
         if (playerExiting)
         {
+            thePlayer.theRB.gravityScale = 0f;
             //Moving player to the new area.
             thePlayer.transform.position = Vector3.MoveTowards(thePlayer.transform.position,
                 new Vector3(transform.position.x - 20 * transform.localScale.x, transform.position.y,
@@ -146,7 +147,7 @@ public class DoorController : MonoBehaviour
 
         //We slowly cover the screen.
         UIController.instance.StartFadeToBlack();
-        yield return new WaitForSeconds(1.0f);
+        //yield return new WaitForSeconds(1.0f);
         
         VitalPoint point = FindObjectOfType<VitalPoint>();
         if (point != null)
@@ -175,7 +176,8 @@ public class DoorController : MonoBehaviour
         UIController.instance.StartFadeFromBlack();
 
         thePlayer.transform.position = new Vector3(exitPoint.position.x, exitPoint.position.y, exitPoint.position.z);
-
+        
+        thePlayer.theRB.gravityScale = 5f;
         //Now the player can move.
         thePlayer.canMove = true;
     }
