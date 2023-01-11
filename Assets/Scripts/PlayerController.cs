@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
 
     public BulletController shotToFire;
     public Transform shotPoint;
+    private float shotCounter = 0;
 
     private bool canDoubleJump;
 
@@ -67,7 +69,10 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove;
     
-    private bool jumpShake = false;
+    public bool jumpShake = false;
+    
+    public float ghostJumpTime = 0;
+    private float ghostJumpTimer = 0.0f;
 
     //Jump buffer
     private float jumpBufferCounter = 0;
@@ -77,17 +82,24 @@ public class PlayerController : MonoBehaviour
     public GameObject normalStomp;
     private bool stompOnFall = false;
 
+    private CameraShaker shaker;
+
     // Start is called before the first frame update
     void Start()
     {
         abilities = GetComponent<PlayerAbillityTracker>();
         //In the future we will use it to, for example block player movement in some situations
         canMove = true;
+        shaker = FindObjectOfType<CameraShaker>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (shaker == null)
+        {
+            shaker = FindObjectOfType<CameraShaker>();
+        }
         if (canMove && Time.timeScale != 0)
         {
             if (dashRechargeCounter > 0)
@@ -137,10 +149,16 @@ public class PlayerController : MonoBehaviour
                     theRB.transform.localScale = Vector3.one;
                 }
             }
-            //Checking if on the ground. Basically we draw a small circle around groundPoint and se if there is ground within it.
-            isOnGround = Physics2D.OverlapCircle(groundPoint.position, .15f, whatIsGround);
 
-            if (theRB.velocity.y <= -30)
+            if (isOnGround && !Physics2D.OverlapCircle(groundPoint.position, .17f, whatIsGround))
+            {
+                ghostJumpTimer = ghostJumpTime;
+            }
+            //Checking if on the ground. Basically we draw a small circle around groundPoint and se if there is ground within it.
+            isOnGround = Physics2D.OverlapCircle(groundPoint.position, .17f, whatIsGround);
+            ghostJumpTimer -= Time.deltaTime;
+            
+            if (theRB.velocity.y <= -30 && SceneManager.GetActiveScene().name != "Boss1")
             {
                 jumpShake = true;
             }
@@ -153,6 +171,8 @@ public class PlayerController : MonoBehaviour
             if (isOnGround && jumpShake)
             {
                 Instantiate(playerStompEffect, groundPoint.position, Quaternion.identity);
+                StartCoroutine(shaker.Shake(.75f, 2f));
+                AudioManager.instance.PlaySFX(4);
                 jumpShake = false;
             }
             else if (isOnGround && stompOnFall)
@@ -172,12 +192,18 @@ public class PlayerController : MonoBehaviour
                 theRB.velocity = new Vector2(theRB.velocity.x, 6);
             }
 
-            if ((!Input.GetButtonUp("Jump") && jumpBufferCounter > 0) && (isOnGround || (canDoubleJump && abilities.canDoubleJump && Input.GetButtonDown("Jump"))))
+            if ((!Input.GetButtonUp("Jump") && jumpBufferCounter > 0) && (isOnGround || (canDoubleJump && abilities.canDoubleJump && Input.GetButtonDown("Jump")) || ghostJumpTimer > 0))
             {
                 if (isOnGround)
                 {
                     Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity); 
                     canDoubleJump = true;
+                }
+                else if (ghostJumpTimer > 0)
+                {
+                    Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity); 
+                    canDoubleJump = true;
+                    ghostJumpTimer = 0;
                 }
                 else
                 {
@@ -199,15 +225,19 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
+            if (shotCounter > 0)
+            {
+                shotCounter -= Time.deltaTime;
+            }
             //FIRING
             //If left mouse button pressed.
-            if (Input.GetButtonDown("Fire1"))
+            if ((Input.GetButton("Fire1") || Input.GetKey(KeyCode.RightControl)) && shotCounter <= 0)
             {
                 if (standing.activeSelf)
                 {
                     Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
                     anim.SetTrigger("shotFired");
-
+                    shotCounter = 0.24f;
                     AudioManager.instance.PlaySFX(14);
                 }
                 else if (ball.activeSelf && abilities.canDropBomb)

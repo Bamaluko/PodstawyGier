@@ -59,6 +59,7 @@ public class RespawnController : MonoBehaviour
     //Starts up a coroutine responsible for respawning.
     public void Respawn()
     {
+        FindObjectOfType<PlayerController>().jumpShake = false;
         StartCoroutine(RespawnCo());
     }
 

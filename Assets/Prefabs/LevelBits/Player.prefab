@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5df3fde07a3e8e4a877e7ade8597d7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invincibilityLength: 1.5
+  invincibilityLength: 0.75
   flashLength: 0.1
   playerSprites:
   - {fileID: 9092983749924564605}
@@ -524,6 +524,8 @@ MonoBehaviour:
   bombPoint: {fileID: 9092983749778302229}
   bomb: {fileID: 7194540616736852048, guid: 735e50082a2d90742beff87fcb702c20, type: 3}
   canMove: 1
+  jumpShake: 0
+  ghostJumpTime: 0.08
   jumpBuffer: 0.1
   playerStompEffect: {fileID: 6537974848621750133, guid: 888d37f6c112d3641a26a002c3058eb6, type: 3}
   normalStomp: {fileID: 8864227871434472110, guid: 9916b56f5a1ec974bb11ddaa01c61a61, type: 3}
