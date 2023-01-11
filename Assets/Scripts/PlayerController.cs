@@ -158,7 +158,7 @@ public class PlayerController : MonoBehaviour
             isOnGround = Physics2D.OverlapCircle(groundPoint.position, .17f, whatIsGround);
             ghostJumpTimer -= Time.deltaTime;
             
-            if (theRB.velocity.y <= -30 && SceneManager.GetActiveScene().name != "Boss1")
+            if (theRB.velocity.y <= -40 && SceneManager.GetActiveScene().name != "Boss1")
             {
                 jumpShake = true;
             }

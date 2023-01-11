@@ -15,15 +15,15 @@ public class Tutorial : MonoBehaviour
     void Start()
     {
         if (PlayerPrefs.GetInt("tutorial1") == 1 && SceneManager.GetActiveScene().name == "Room1") {
-            Destroy(screen);
+            screen.SetActive(false);
         }
         if (PlayerPrefs.GetInt("tutorial2") == 1 && SceneManager.GetActiveScene().name == "Room1")
         {
-            Destroy(trigerScreen);
+            trigerScreen.SetActive(false);
         }
         if (PlayerPrefs.GetInt("tutorial3") == 1 && SceneManager.GetActiveScene().name == "Room2")
         { 
-            Destroy(vspotScreen);
+            vspotScreen.SetActive(false);
             enabled = false;
         }
     }
@@ -32,22 +32,24 @@ public class Tutorial : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Room1") {
             PlayerPrefs.SetInt("tutorial1", 1);
-            Destroy(screen);
+            screen.SetActive(false);
         }
         else if (SceneManager.GetActiveScene().name == "Room2") {
             PlayerPrefs.SetInt("tutorial3", 1);
-            Destroy(vspotScreen);
+            vspotScreen.SetActive(false);
         }
         Time.timeScale = 1.0f;
-        
+        FindObjectOfType<PlayerController>().canMove = true;
+        FindObjectOfType<CameraShaker>().enabled = true;
     }
 
     public void ContinueTrigger()
     {
         PlayerPrefs.SetInt("tutorial2", 1);
-        Destroy(trigerScreen);
+        trigerScreen.SetActive(false);
         Time.timeScale = 1.0f;
         FindObjectOfType<PlayerController>().canMove = true;
+        FindObjectOfType<CameraShaker>().enabled = true;
     }
 
 
@@ -58,7 +60,7 @@ public class Tutorial : MonoBehaviour
             trigerScreen.SetActive(true);
             Time.timeScale = 0;
             FindObjectOfType<PlayerController>().canMove = false;
-
+            FindObjectOfType<CameraShaker>().enabled = false;
         }
     }
 
@@ -68,6 +70,12 @@ public class Tutorial : MonoBehaviour
         {
             vspotScreen.SetActive(true);
             enabled = false;
+        }
+        if (screen.activeSelf || vspotScreen.activeSelf)
+        {
+            Time.timeScale = 0;
+            FindObjectOfType<PlayerController>().canMove = false;
+            FindObjectOfType<CameraShaker>().enabled = false;
         }
     }
 }
