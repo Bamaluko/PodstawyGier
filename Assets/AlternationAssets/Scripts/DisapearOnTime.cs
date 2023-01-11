@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Timers;
+using Unity.PlasticSCM.Editor.WebApi;
 using Unity.VisualScripting;
 using UnityEngine.Serialization;
 using UnityEngine.Tilemaps;
@@ -16,6 +17,7 @@ public class DisapearOnTime : MonoBehaviour
 
     private float currentTime = 0;
     private bool isColide = false;
+    private bool isTrigger = false;
 
     // Update is called once per frame
     void Update()
@@ -34,14 +36,14 @@ public class DisapearOnTime : MonoBehaviour
                 if (currentTime >= timeToTogglePlatform)
                 {
                     currentTime = timeToTogglePlatform;
-                    GetComponent<TilemapCollider2D>().enabled = !isColide;
+                    GetComponent<TilemapCollider2D>().isTrigger = true;
                     isColide = false;
                 }
             }
-            else if (!isColide && currentTime > 0)
+            else if (!isColide && currentTime !=0)
             {
                 currentTime -= 2 * Time.deltaTime;
-                if (currentTime <= 0)
+                if (currentTime <= 0 && isTrigger == false)
                 {
                     currentTime = 0;
                     gameObject.GetComponent<Tilemap>().color = 
@@ -49,7 +51,7 @@ public class DisapearOnTime : MonoBehaviour
                             gameObject.GetComponent<Tilemap>().color.g, 
                             gameObject.GetComponent<Tilemap>().color.b,
                             1 );
-                    GetComponent<TilemapCollider2D>().enabled = !isColide;
+                    GetComponent<TilemapCollider2D>().isTrigger = false;
                 }
             }
         }
@@ -60,6 +62,23 @@ public class DisapearOnTime : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isColide = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        
+        if (other.CompareTag("Player"))
+        {
+            isTrigger = false;
         }
     }
 }   

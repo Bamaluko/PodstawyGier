@@ -130,7 +130,6 @@ public class DoorController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
         {
-            Debug.Log("If entered.");
             //The player is exiting the area now.
             playerExiting = false;
 
@@ -140,7 +139,6 @@ public class DoorController : MonoBehaviour
 
             //Now the player can move.
             thePlayer.canMove = true;
-            Debug.Log("If finished.");
             yield break;
         }
         

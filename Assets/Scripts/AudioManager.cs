@@ -29,6 +29,7 @@ public class AudioManager : MonoBehaviour
         bossMusic.Stop();
         mainMenuMusic.Play();
     }
+    
 
     public void PlayLevelMusic()
     {
