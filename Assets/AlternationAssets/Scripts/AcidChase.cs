@@ -27,7 +27,7 @@ public class AcidChase : MonoBehaviour
             enabled = false;
         }
 
-        if (player.transform.position.y - transform.position.y > 25)
+        if (player.transform.position.y - transform.position.y > 30)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + (speed * 3 * Time.deltaTime), transform.position.z);
         }
