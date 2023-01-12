@@ -685,7 +685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Demo
+  m_text: 'Malleable Hollow
 
 '
   m_isRightToLeft: 0
@@ -714,8 +714,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 300
-  m_fontSizeBase: 300
+  m_fontSize: 265
+  m_fontSizeBase: 265
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
