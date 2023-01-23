@@ -9,27 +9,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 2ca38cc0ec040684391fd28a8d0f6aca
   - enabled: 0
-    path: Assets/Scenes/Area 1.unity
+    path: Assets/Scenes/Demo1/Area 1.unity
     guid: 6f108e9aebf455f4cb920ca2b04a6021
   - enabled: 0
-    path: Assets/Scenes/Area 2.unity
+    path: Assets/Scenes/Demo1/Area 2.unity
     guid: d5143cf3cb029f54f9992dd929eee9af
   - enabled: 0
-    path: Assets/Scenes/Area 3.unity
+    path: Assets/Scenes/Demo1/Area 3.unity
     guid: e816d50c45d086a4d807855f447e7741
-  - enabled: 1
-    path: Assets/Scenes/Room1.unity
+  - enabled: 0
+    path: Assets/Scenes/Demo2/Room1.unity
     guid: f9b0d85664a781243a4f77a745816d08
-  - enabled: 1
-    path: Assets/Scenes/Room2.unity
+  - enabled: 0
+    path: Assets/Scenes/Demo2/Room2.unity
     guid: 05987d17daa60334cb52db1d34a2eaf5
-  - enabled: 1
-    path: Assets/Scenes/Room3.unity
+  - enabled: 0
+    path: Assets/Scenes/Demo2/Room3.unity
     guid: 76ae8ac36268a0f49898255281ff5ae7
-  - enabled: 1
-    path: Assets/Scenes/Room3a.unity
+  - enabled: 0
+    path: Assets/Scenes/Demo2/Room3a.unity
     guid: 7161ede435a6fd942ad24c9a23178a5c
-  - enabled: 1
-    path: Assets/Scenes/Boss1.unity
+  - enabled: 0
+    path: Assets/Scenes/Demo2/Boss1.unity
     guid: d9ded839b7116994aa6b5d01de8c3912
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1.unity
+    guid: 810a2f86a52436c4cad2327b20588e65
+  - enabled: 1
+    path: Assets/Scenes/Tutorial2.unity
+    guid: 4aa7ec23f6adc7242a3ebe59f5c42991
   m_configObjects: {}

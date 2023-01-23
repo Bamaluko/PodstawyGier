@@ -33,6 +33,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("max_health", 6);
         PlayerPrefs.SetString("enemies_killed", "0");
         PlayerPrefs.SetString("player_deaths", "0");
+        PlayerPrefs.SetString("none", "0");
     }
 
     public void Continue()

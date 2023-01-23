@@ -14,10 +14,10 @@ public class Tutorial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("tutorial1") == 1 && SceneManager.GetActiveScene().name == "Room1") {
+        if (PlayerPrefs.GetInt("tutorial1") == 1 && SceneManager.GetActiveScene().name == "Tutorial1") {
             screen.SetActive(false);
         }
-        if (PlayerPrefs.GetInt("tutorial2") == 1 && SceneManager.GetActiveScene().name == "Room1")
+        if (PlayerPrefs.GetInt("tutorial2") == 1 && SceneManager.GetActiveScene().name == "Tutorial1")
         {
             trigerScreen.SetActive(false);
         }
@@ -30,7 +30,7 @@ public class Tutorial : MonoBehaviour
 
     public void Continue()
     {
-        if (SceneManager.GetActiveScene().name == "Room1") {
+        if (SceneManager.GetActiveScene().name == "Tutorial1") {
             PlayerPrefs.SetInt("tutorial1", 1);
             screen.SetActive(false);
         }
