@@ -17,7 +17,7 @@ public class Tutorial : MonoBehaviour
         if (PlayerPrefs.GetInt("tutorial1") == 1 && SceneManager.GetActiveScene().name == "Tutorial1") {
             screen.SetActive(false);
         }
-        if (PlayerPrefs.GetInt("tutorial2") == 1 && SceneManager.GetActiveScene().name == "Tutorial1")
+        if (PlayerPrefs.GetInt("tutorial2") == 1 && SceneManager.GetActiveScene().name == "Tutorial4")
         {
             trigerScreen.SetActive(false);
         }

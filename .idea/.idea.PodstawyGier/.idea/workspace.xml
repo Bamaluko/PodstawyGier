@@ -140,32 +140,22 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Checkpoint.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Checkpoint.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Destructible Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Destructible Block.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Destructible Block.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Destructible Block.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Grid Template.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Grid Template.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Health Gem.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Health Gem.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/UI Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/UI Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/santa-hatV2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelBits/santa-hatV2.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Button.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Vital Point.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Vital Point.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Area 3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 1.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 2.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 3.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 3.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room1.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room2.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3a.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room3a.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" afterDir="false" />
@@ -336,7 +326,8 @@
       <workItem from="1673438557767" duration="6916000" />
       <workItem from="1673459004677" duration="2362000" />
       <workItem from="1673469783210" duration="623000" />
-      <workItem from="1674486461266" duration="2006000" />
+      <workItem from="1674486461266" duration="2007000" />
+      <workItem from="1674546757114" duration="1646000" />
     </task>
     <servers />
   </component>

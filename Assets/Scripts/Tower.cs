@@ -17,7 +17,10 @@ public class Tower : MonoBehaviour
 
     private void Start()
     {
-
+        if (PlayerPrefs.HasKey("mural_damage_increase"))
+        {
+            Damage += 1;
+        }
     }
 
     void Update()

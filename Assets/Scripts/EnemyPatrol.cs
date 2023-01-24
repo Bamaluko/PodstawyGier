@@ -26,6 +26,10 @@ public class EnemyPatrol : MonoBehaviour
         {
             pPoint.SetParent(null);
         }
+        if (PlayerPrefs.HasKey("walker_damage_increase"))
+        {
+            GetComponentInParent<DamagePlayer>().damageAmount += 1;
+        }
     }
 
     // Update is called once per frame

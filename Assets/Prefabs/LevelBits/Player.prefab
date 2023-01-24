@@ -512,8 +512,8 @@ MonoBehaviour:
   playerSprites:
   - {fileID: 9092983749924564605}
   - {fileID: 9092983750469171164}
-  currentHealth: 3
-  maxHealth: 3
+  currentHealth: 4
+  maxHealth: 4
 --- !u!114 &9092983751034568415
 MonoBehaviour:
   m_ObjectHideFlags: 0
