@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5203723395274706655}
   m_Layer: 14
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: RedBridge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 8534784997424257313}
   m_Layer: 14
   m_Name: Red Platforms
-  m_TagString: Untagged
+  m_TagString: RedBridge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

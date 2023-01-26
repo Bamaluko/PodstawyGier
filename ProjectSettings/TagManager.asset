@@ -9,6 +9,8 @@ TagManager:
   - Boss
   - BossShot
   - Wind
+  - SquarePlatforms
+  - RedBridge
   layers:
   - Default
   - TransparentFX

@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnDamage: 1
-  destroyEffect: {fileID: 2850065786240644843, guid: 46778094772a1a647a0fc42c5e7f0329, type: 3}
+  destroyEffect: {fileID: 1614518888761914546, guid: b3d02e4fae8361341b309f919bac03ea, type: 3}
   damageAmount: 3
   damageAnyway: 0
 --- !u!114 &801617248320405895
@@ -225,3 +225,4 @@ MonoBehaviour:
   moveSpeed: 5
   turnSpeed: 5
   anim: {fileID: 801617246650194510}
+  explosion: {fileID: 1614518888761914546, guid: b3d02e4fae8361341b309f919bac03ea, type: 3}

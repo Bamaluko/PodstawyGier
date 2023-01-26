@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +26,7 @@ public class EnemyFlierController : MonoBehaviour
     private Transform player;
 
     public Animator anim;
+    public GameObject explosion;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +68,22 @@ public class EnemyFlierController : MonoBehaviour
             //{
             //    isChasing = false;
             //}
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("SquarePlatforms") && PlayerPrefs.HasKey("FlierDestroySquarePlatforms"))
+        {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(col.gameObject);
+            Destroy(gameObject);
+        }
+        else if (col.gameObject.CompareTag("RedBridge") && PlayerPrefs.HasKey("FlierDestroyRedBridges"))
+        {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(col.gameObject);
+            Destroy(gameObject);
         }
     }
 }
