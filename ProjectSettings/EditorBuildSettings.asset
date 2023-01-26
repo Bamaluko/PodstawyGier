@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial4.unity
     guid: 14b2235f4fb75444ead7ff9ad91222b1
+  - enabled: 1
+    path: Assets/Scenes/MiniBoss1.unity
+    guid: 4bd0d8a9663296f45938b7ab0534064b
+  - enabled: 1
+    path: Assets/Scenes/Level1a.unity
+    guid: 0aa52f956d24d014693660ce1f3a4ac4
   m_configObjects: {}

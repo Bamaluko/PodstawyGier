@@ -3239,8 +3239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Health pickups increase your health PERMANENTALY! Make sure to collect
-    them!
+  m_text: Health pickups increase your health PERMANENTLY! Make sure to collect them!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d94782f171558bc43be66182b1662f67, type: 2}
   m_sharedMaterial: {fileID: 7462947868450046082, guid: d94782f171558bc43be66182b1662f67, type: 2}

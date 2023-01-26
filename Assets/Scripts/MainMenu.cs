@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetFloat("PosX", 2);
         PlayerPrefs.SetFloat("PosY", 22.5f);
         PlayerPrefs.SetFloat("PosZ", 0);
-        PlayerPrefs.SetString("ContinueLevel", "Room1");
+        //PlayerPrefs.SetString("ContinueLevel", "Room1");
         PlayerPrefs.SetInt("canDoubleJump", 0);
         SceneManager.LoadScene(newGameScene);
         PlayerPrefs.SetInt("max_health", 6);

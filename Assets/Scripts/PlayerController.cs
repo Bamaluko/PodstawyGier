@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -83,6 +84,8 @@ public class PlayerController : MonoBehaviour
     private bool stompOnFall = false;
 
     private CameraShaker shaker;
+    
+    private bool isInWind = false;
 
     // Start is called before the first frame update
     void Start()
@@ -166,12 +169,17 @@ public class PlayerController : MonoBehaviour
             {
                 stompOnFall = true;
             }
-            
 
+
+            if (isOnGround && isInWind)
+            {
+                isInWind = false;
+            }
+            
             if (isOnGround && jumpShake)
             {
                 Instantiate(playerStompEffect, groundPoint.position, Quaternion.identity);
-                StartCoroutine(shaker.Shake(.75f, 2f));
+                //StartCoroutine(shaker.Shake(.75f, 2f));
                 AudioManager.instance.PlaySFX(4);
                 jumpShake = false;
             }
@@ -187,7 +195,7 @@ public class PlayerController : MonoBehaviour
                 jumpBufferCounter = jumpBuffer;
             }
 
-            if (theRB.velocity.y > 6 && canDoubleJump && !Input.GetButton("Jump"))
+            if (theRB.velocity.y > 6 && canDoubleJump && !Input.GetButton("Jump") && !isInWind)
             {
                 theRB.velocity = new Vector2(theRB.velocity.x, 6);
             }
@@ -305,5 +313,30 @@ public class PlayerController : MonoBehaviour
         Destroy(image.gameObject, afterImageLifetime);
 
         afterImageCounter = timeBetweenAfterImages;
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Wind"))
+        {
+            //canDoubleJump = false;
+            if (PlayerPrefs.HasKey("WindFlow"))
+            {
+                isInWind = true;
+                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Wind"))
+        {
+            if (PlayerPrefs.HasKey("WindFlow"))
+            {
+                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                //canDoubleJump = true;
+            }
+        }
     }
 }

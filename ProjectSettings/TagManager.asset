@@ -8,6 +8,7 @@ TagManager:
   - PlayerGroundSpot
   - Boss
   - BossShot
+  - Wind
   layers:
   - Default
   - TransparentFX

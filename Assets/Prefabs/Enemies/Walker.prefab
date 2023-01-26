@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3068523184488321541}
   - component: {fileID: 3068523184488321786}
   - component: {fileID: 3068523184488321787}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Walker
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -177,6 +177,7 @@ MonoBehaviour:
   destroyOnDamage: 0
   destroyEffect: {fileID: 0}
   damageAmount: 1
+  damageAnyway: 0
 --- !u!1 &3068523184782879395
 GameObject:
   m_ObjectHideFlags: 0
