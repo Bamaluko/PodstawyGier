@@ -35,7 +35,7 @@ public class DisapearOnTime : MonoBehaviour
                 if (currentTime >= timeToTogglePlatform)
                 {
                     currentTime = timeToTogglePlatform;
-                    GetComponent<TilemapCollider2D>().isTrigger = true;
+                    GetComponent<CompositeCollider2D>().isTrigger = true;
                     isColide = false;
                 }
             }
@@ -50,7 +50,7 @@ public class DisapearOnTime : MonoBehaviour
                             gameObject.GetComponent<Tilemap>().color.g, 
                             gameObject.GetComponent<Tilemap>().color.b,
                             1 );
-                    GetComponent<TilemapCollider2D>().isTrigger = false;
+                    GetComponent<CompositeCollider2D>().isTrigger = false;
                 }
             }
         }

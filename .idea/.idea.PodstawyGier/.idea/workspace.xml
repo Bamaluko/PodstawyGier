@@ -13,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PodstawyGier/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PodstawyGier/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Red Platforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Red Platforms.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Red Platforms.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Red Platforms.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Square Platform.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Assets/Square Platform.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AlternationAssets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AlternationAssets/Scripts.meta" afterDir="false" />
@@ -152,7 +153,11 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 3.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 3.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room1.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room2.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1a.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1a.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1b.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1b.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AcidDamage.cs" afterDir="false" />
@@ -325,6 +330,7 @@
       <workItem from="1674546757114" duration="1646000" />
       <workItem from="1674655602078" duration="1070000" />
       <workItem from="1674734836289" duration="9261000" />
+      <workItem from="1675096717662" duration="859000" />
     </task>
     <servers />
   </component>
