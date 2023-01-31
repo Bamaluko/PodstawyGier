@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
   
     public PlayerAbillityTracker player;
 
+    public GameObject creditsScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +61,16 @@ public class MainMenu : MonoBehaviour
         }
 
         SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
+    }
+
+    public void showCredits ()
+    {
+        creditsScreen.SetActive(true);
+    }
+
+    public void hideCredits()
+    {
+        creditsScreen.SetActive(false);
     }
 
     public void QuitGame()

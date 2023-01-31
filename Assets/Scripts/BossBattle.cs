@@ -93,6 +93,11 @@ public class BossBattle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Backspace) || Input.GetKeyDown(KeyCode.Delete))
+        {
+            BossHealthController.instance.TakeDamage(50);
+        }
+
         //Slowly moving the camera to the required position.
         theCam.transform.position = Vector3.MoveTowards(theCam.transform.position, camPosition.position,
             camSpeed * Time.deltaTime);
