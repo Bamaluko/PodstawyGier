@@ -1512,8 +1512,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333042250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 461.66, y: -10.43, z: -0.92467016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 458.54, y: 110.35, z: -0.92467016}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1596003784}
@@ -1537,7 +1537,7 @@ MonoBehaviour:
   distanceToOpen: 7.5
   exitPoint: {fileID: 1560635712}
   movePlayerSpeed: 8
-  levelToLoad: MiniBoss1
+  levelToLoad: DashRoom
   alternative1: delete_water_bridges
   alternative2: rotate_square_platform
   buttonText1: Make water bridges diasappear
@@ -65191,7 +65191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560635711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.92, y: -0.4, z: 0}
+  m_LocalPosition: {x: 60.52, y: -131.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

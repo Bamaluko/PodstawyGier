@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                if (Input.GetButtonDown("Fire2") && standing.activeSelf && abilities.canDash)
+                if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetButtonDown("Fire2")) && standing.activeSelf && abilities.canDash)
                 {
                     dashCounter = dashTime;
                     showAfterImage();
@@ -239,12 +239,23 @@ public class PlayerController : MonoBehaviour
             }
             //FIRING
             //If left mouse button pressed.
+            
+
             if ((Input.GetButton("Fire1") || Input.GetKey(KeyCode.RightControl)) && shotCounter <= 0)
             {
                 if (standing.activeSelf)
                 {
-                    Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
-                    anim.SetTrigger("shotFired");
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(0f, 1f);
+                        anim.SetTrigger("shotFiredUp");
+                    } else
+                    {
+                        Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
+                        anim.SetTrigger("shotFired");
+                    }
+                   
+                    
                     shotCounter = 0.24f;
                     AudioManager.instance.PlaySFX(14);
                 }
