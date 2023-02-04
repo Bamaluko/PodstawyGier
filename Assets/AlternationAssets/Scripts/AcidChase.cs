@@ -26,15 +26,8 @@ public class AcidChase : MonoBehaviour
         {
             enabled = false;
         }
+        transform.position = new Vector3(transform.position.x, transform.position.y + (speed * Time.deltaTime), transform.position.z);
 
-        if (player.transform.position.y - transform.position.y > 30)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y + (speed * 3 * Time.deltaTime), transform.position.z);
-        }
-        else
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y + (speed * Time.deltaTime), transform.position.z);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -46,7 +39,6 @@ public class AcidChase : MonoBehaviour
             {
                 player = FindObjectOfType<PlayerController>();
                 StartCoroutine(FindObjectOfType<CameraShaker>().Shake(3, 1));
-                transform.position = new Vector3(transform.position.x, player.transform.position.y + 5, transform.position.z);
                 enabled = true;
                 destructor.Destruction();
                 isChasing = true;

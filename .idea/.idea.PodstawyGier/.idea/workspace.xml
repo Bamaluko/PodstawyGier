@@ -145,6 +145,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Button.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Vital Point.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Vital Point.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DashRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DashRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DashRoom.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DashRoom.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 1.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 2.unity.meta" afterDir="false" />
@@ -152,6 +154,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 3.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo1/Area 3.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room1.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo2/Room2.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1b.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1b.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AbillityUnlock.cs.meta" afterDir="false" />
@@ -208,6 +212,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/PlayerShootUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/PlayerShootUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/PlayerShootUp.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/PlayerShootUp.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Art/boogex_gaming.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Art/boogex_gaming.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Font/Pixelnauts SDF Outline.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Font/Pixelnauts SDF Outline.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Font/Pixelnauts SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Udemy Metroidvania Assets/Font/Pixelnauts SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
@@ -326,6 +334,7 @@
       <workItem from="1674655602078" duration="1070000" />
       <workItem from="1674734836289" duration="9261000" />
       <workItem from="1675096717662" duration="1197000" />
+      <workItem from="1675538112451" duration="858000" />
     </task>
     <servers />
   </component>
