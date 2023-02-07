@@ -905,7 +905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &339320922
 Transform:
   m_ObjectHideFlags: 0
@@ -35254,6 +35254,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7203472149105980818, guid: f50cb9689ac24b046b698fc0db308728, type: 3}
+      propertyPath: canDash
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203472149105980818, guid: f50cb9689ac24b046b698fc0db308728, type: 3}
+      propertyPath: canDoubleJump
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9092983751034568386, guid: f50cb9689ac24b046b698fc0db308728, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -35306,6 +35314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9092983751034568415, guid: f50cb9689ac24b046b698fc0db308728, type: 3}
+      propertyPath: normalStomp
+      value: 
+      objectReference: {fileID: 8864227871434472110, guid: 9916b56f5a1ec974bb11ddaa01c61a61, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f50cb9689ac24b046b698fc0db308728, type: 3}
 --- !u!4 &1017802000 stripped
