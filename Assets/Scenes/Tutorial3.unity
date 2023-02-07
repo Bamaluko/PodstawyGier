@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6115312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.148554, y: -0.7591896, z: 0}
+  m_LocalPosition: {x: -168.2, y: -3.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2461,7 +2461,7 @@ MonoBehaviour:
   distanceToOpen: 7.5
   exitPoint: {fileID: 6115313}
   movePlayerSpeed: 8
-  levelToLoad: Tutorial4
+  levelToLoad: MiniBoss1
   alternative1: walker_damage_increase
   alternative2: mural_damage_increase
   buttonText1: Walkers will damage you more
