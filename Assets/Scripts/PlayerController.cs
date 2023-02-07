@@ -328,26 +328,19 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Wind"))
+        if (other.gameObject.CompareTag("Wind") & !PlayerPrefs.HasKey("WindZoom"))
         {
-            //canDoubleJump = false;
-            if (PlayerPrefs.HasKey("WindFlow"))
-            {
                 isInWind = true;
                 theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-            }
+            
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Wind"))
+        if (other.gameObject.CompareTag("Wind") & !PlayerPrefs.HasKey("WindZoom"))
         {
-            if (PlayerPrefs.HasKey("WindFlow"))
-            {
-                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-                //canDoubleJump = true;
-            }
+                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);   
         }
     }
 }

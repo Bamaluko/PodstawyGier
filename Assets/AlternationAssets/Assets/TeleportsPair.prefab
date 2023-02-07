@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2319521031476678823, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}
       propertyPath: m_TagString
-      value: Wind
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2319521032462467490, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}
       propertyPath: m_RootOrder
@@ -289,7 +289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2319521031476678823, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}
       propertyPath: m_TagString
-      value: Wind
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2319521032462467490, guid: f3a91d283ae2ce340b65e1ee86f5927d, type: 3}
       propertyPath: m_RootOrder
