@@ -25,6 +25,10 @@ public class BossHealthController : MonoBehaviour
 
     public BossBattle theBoss;
 
+    public SpriteRenderer sr;
+
+    private bool isChangingColor = false;
+
     public void Awake()
     {
         instance = this;
@@ -41,6 +45,8 @@ public class BossHealthController : MonoBehaviour
     {
         currentHealth -= damageAmount;
 
+        isChangingColor = true;
+
         if(currentHealth <= 0)
         {
             currentHealth = 0;
@@ -52,5 +58,21 @@ public class BossHealthController : MonoBehaviour
             AudioManager.instance.PlaySFX(1);
         }
         bossHealthSlider.value = currentHealth;
+    }
+
+    public void Update()
+    {
+        if (sr.color.a > 0 && isChangingColor) sr.color = new Color(sr.color.r,
+                                                  sr.color.g,
+                                                  sr.color.b,
+                                                  sr.color.a - 12f * Time.deltaTime);
+        else if (sr.color.a <= 0)
+        {
+            sr.color = new Color(sr.color.r,
+                                 sr.color.g,
+                                 sr.color.b,
+                                 1);
+            isChangingColor = false;
+        }
     }
 }

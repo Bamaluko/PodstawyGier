@@ -39,7 +39,7 @@ public class EnemyHealthController : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void Update()
     {
         if (sr.color.a > 0 && isChangingColor) sr.color = new Color(sr.color.r,
                                                   sr.color.g,
