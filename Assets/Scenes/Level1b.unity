@@ -1533,8 +1533,8 @@ MonoBehaviour:
   exitPoint: {fileID: 1560635712}
   movePlayerSpeed: 8
   levelToLoad: DashRoom
-  alternative1: delete_water_bridges
-  alternative2: rotate_square_platform
+  alternative1: rotate_square_platform
+  alternative2: move_square_platform
   buttonText1: Make water bridges diasappear
   buttonText2: Rotate all the square blocks
   videoClip1: {fileID: 0}

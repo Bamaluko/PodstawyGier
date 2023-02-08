@@ -367,8 +367,8 @@ MonoBehaviour:
   exitPoint: {fileID: 195415335}
   movePlayerSpeed: 8
   levelToLoad: Level1b
-  alternative1: 
-  alternative2: 
+  alternative1: rotate_square_platform
+  alternative2: move_square_platform
   buttonText1: 
   buttonText2: 
   videoClip1: {fileID: 0}
@@ -8012,11 +8012,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
       propertyPath: alternative1
-      value: 
+      value: rotate_square_platform
       objectReference: {fileID: 0}
     - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
       propertyPath: alternative2
-      value: 
+      value: move_square_platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
@@ -37856,7 +37856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8860662113556236644, guid: cdc180162cdbfd245a1ddf115e1eccfb, type: 3}
       propertyPath: unlockedMessage
-      value: Dash Unlocked!
+      value: Dash Unlocked! Press RMB or Shift to dash
       objectReference: {fileID: 0}
     - target: {fileID: 8860662113556236644, guid: cdc180162cdbfd245a1ddf115e1eccfb, type: 3}
       propertyPath: unlockDoubleJump

@@ -975,8 +975,8 @@ MonoBehaviour:
   exitPoint: {fileID: 91984363}
   movePlayerSpeed: 8
   levelToLoad: Level2b
-  alternative1: 
-  alternative2: 
+  alternative1: rotate_square_platform
+  alternative2: move_square_platform
   buttonText1: 
   buttonText2: 
   videoClip1: {fileID: 0}
@@ -37245,7 +37245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5626361204760512571, guid: e71d8215f2cd39542a75367ec948d647, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.52
+      value: 7.78
       objectReference: {fileID: 0}
     - target: {fileID: 5626361204760512571, guid: e71d8215f2cd39542a75367ec948d647, type: 3}
       propertyPath: m_LocalPosition.y
@@ -75159,7 +75159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acid: {fileID: 1776864571}
   destructor: {fileID: 1832995483}
-  speed: 5
+  speed: 4
   maxHeight: 10000
 --- !u!61 &1776864575
 BoxCollider2D:
@@ -77649,11 +77649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
       propertyPath: alternative1
-      value: 
+      value: rotate_square_platform
       objectReference: {fileID: 0}
     - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
       propertyPath: alternative2
-      value: 
+      value: move_square_platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}

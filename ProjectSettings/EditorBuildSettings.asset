@@ -54,17 +54,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1b.unity
     guid: 7633928aa0f368042a847b9b7ecaf712
   - enabled: 1
-    path: Assets/Scenes/Level2c.unity
-    guid: 70dfa90ce4b45254aa8fa7d776579d4b
+    path: Assets/Scenes/DashRoom.unity
+    guid: 2e1897a13dd25314086a99c0ad7dc932
   - enabled: 1
     path: Assets/Scenes/Level2a.unity
     guid: 2ca8064f7db56144e9736c7b3cefc8c1
   - enabled: 1
-    path: Assets/Scenes/DashRoom.unity
-    guid: 2e1897a13dd25314086a99c0ad7dc932
-  - enabled: 1
     path: Assets/Scenes/Level2b.unity
     guid: 188937ad56b46a44580ff75ac0f66a71
+  - enabled: 1
+    path: Assets/Scenes/Level2c.unity
+    guid: 70dfa90ce4b45254aa8fa7d776579d4b
   - enabled: 1
     path: Assets/Scenes/Level2d.unity
     guid: c828c6bfce0c05c4eaacac85960d5002

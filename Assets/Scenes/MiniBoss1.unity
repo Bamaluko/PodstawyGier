@@ -24237,6 +24237,14 @@ PrefabInstance:
       propertyPath: levelToLoad
       value: Tutorial3
       objectReference: {fileID: 0}
+    - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
+      propertyPath: alternative1
+      value: rotate_square_platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
+      propertyPath: alternative2
+      value: move_square_platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
 --- !u!4 &1494026303 stripped

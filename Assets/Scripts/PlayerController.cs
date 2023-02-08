@@ -71,9 +71,6 @@ public class PlayerController : MonoBehaviour
     public bool canMove;
     
     public bool jumpShake = false;
-    
-    public float ghostJumpTime = 0;
-    private float ghostJumpTimer = 0.0f;
 
     //Jump buffer
     private float jumpBufferCounter = 0;
@@ -152,15 +149,10 @@ public class PlayerController : MonoBehaviour
                     theRB.transform.localScale = Vector3.one;
                 }
             }
-
-            if (isOnGround && !Physics2D.OverlapCircle(groundPoint.position, .17f, whatIsGround))
-            {
-                ghostJumpTimer = ghostJumpTime;
-            }
-            //Checking if on the ground. Basically we draw a small circle around groundPoint and se if there is ground within it.
-            isOnGround = Physics2D.OverlapCircle(groundPoint.position, .17f, whatIsGround);
-            ghostJumpTimer -= Time.deltaTime;
             
+            //Checking if on the ground. Basically we draw a small circle around groundPoint and se if there is ground within it.
+            isOnGround = Physics2D.OverlapCircle(groundPoint.position, .14f, whatIsGround);
+
             if (theRB.velocity.y <= -35 && SceneManager.GetActiveScene().name != "Boss1")
             {
                 jumpShake = true;
@@ -200,18 +192,12 @@ public class PlayerController : MonoBehaviour
                 theRB.velocity = new Vector2(theRB.velocity.x, 6);
             }
 
-            if ((!Input.GetButtonUp("Jump") && jumpBufferCounter > 0) && (isOnGround || (canDoubleJump && abilities.canDoubleJump && Input.GetButtonDown("Jump")) || ghostJumpTimer > 0))
+            if ((!Input.GetButtonUp("Jump") && jumpBufferCounter > 0) && (isOnGround || (canDoubleJump && abilities.canDoubleJump && Input.GetButtonDown("Jump"))))
             {
                 if (isOnGround)
                 {
                     Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity); 
                     canDoubleJump = true;
-                }
-                else if (ghostJumpTimer > 0)
-                {
-                    Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity); 
-                    canDoubleJump = true;
-                    ghostJumpTimer = 0;
                 }
                 else
                 {

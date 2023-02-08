@@ -35,10 +35,15 @@ public class CameraController : MonoBehaviour
         //Cameras aspect is it's ratio width/height. aspect * halfHeight = halfWidth.
         halfWidth = halfHeight * Camera.main.aspect;
 
-        if (!PlayerPrefs.HasKey("Boss1") && SceneManager.GetActiveScene().name == "Boss1")
+        if (!PlayerPrefs.HasKey("Boss1") && SceneManager.GetActiveScene().name == "MiniBoss1")
         {
             AudioManager.instance.StopMusic();
-        } else
+        } 
+        else if (SceneManager.GetActiveScene().name is "Level2b" or "Level2c" or "Level2d")
+        {
+            AudioManager.instance.PlayBossMusic();
+        }
+        else
         {
             AudioManager.instance.PlayLevelMusic();
         }

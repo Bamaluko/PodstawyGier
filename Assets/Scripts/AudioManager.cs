@@ -55,8 +55,11 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBossMusic()
     {
-        levelMusic.Stop();
-        bossMusic.Play();
+        if (!bossMusic.isPlaying)
+        {
+            levelMusic.Stop();
+            bossMusic.Play();
+        }
     }
 
     public void StopMusic()
