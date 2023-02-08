@@ -23686,6 +23686,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3934129235505091155, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
+      propertyPath: m_AudioOutputMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339661640902821861, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
+      propertyPath: m_AudioOutputMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7311361702017497153, guid: 86adae8709138944a9e0c5910559a48d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -23928,8 +23936,8 @@ MonoBehaviour:
   alternative2: WindZoom
   buttonText1: Windy fog will carry you up
   buttonText2: Windy fog will teleport you to another one
-  videoClip1: {fileID: 0}
-  videoClip2: {fileID: 0}
+  videoClip1: {fileID: 32900000, guid: dec19915a76ea1b4ca33c3fd6f329584, type: 3}
+  videoClip2: {fileID: 32900000, guid: d65c517414394c64185ea1fb71d25101, type: 3}
 --- !u!61 &1406950580
 BoxCollider2D:
   m_ObjectHideFlags: 0
