@@ -24,5 +24,10 @@ public class AcidDamage : MonoBehaviour
                 FindObjectOfType<AcidChase>().enabled = false;
             }
         }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
