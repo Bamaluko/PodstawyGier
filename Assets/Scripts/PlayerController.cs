@@ -84,6 +84,8 @@ public class PlayerController : MonoBehaviour
     
     private bool isInWind = false;
 
+    private float shadowJumpTimer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -152,6 +154,15 @@ public class PlayerController : MonoBehaviour
             
             //Checking if on the ground. Basically we draw a small circle around groundPoint and se if there is ground within it.
             isOnGround = Physics2D.OverlapCircle(groundPoint.position, .14f, whatIsGround);
+            if (isOnGround)
+            {
+                canDoubleJump = true;
+                shadowJumpTimer = 0;
+            }
+            else
+            {
+                shadowJumpTimer += Time.deltaTime;
+            }
 
             if (theRB.velocity.y <= -35 && SceneManager.GetActiveScene().name != "Boss1")
             {
@@ -192,12 +203,13 @@ public class PlayerController : MonoBehaviour
                 theRB.velocity = new Vector2(theRB.velocity.x, 6);
             }
 
-            if ((!Input.GetButtonUp("Jump") && jumpBufferCounter > 0) && (isOnGround || (canDoubleJump && abilities.canDoubleJump && Input.GetButtonDown("Jump"))))
+            if ((!Input.GetButtonUp("Jump") && jumpBufferCounter > 0) && (isOnGround || shadowJumpTimer < 0.3 || (canDoubleJump && abilities.canDoubleJump && Input.GetButtonDown("Jump"))))
             {
-                if (isOnGround)
+                if (isOnGround || shadowJumpTimer < 0.15)
                 {
                     Instantiate(normalStomp, groundPoint.transform.position, Quaternion.identity); 
                     canDoubleJump = true;
+                    shadowJumpTimer = 1;
                 }
                 else
                 {
