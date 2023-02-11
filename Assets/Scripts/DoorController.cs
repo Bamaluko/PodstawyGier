@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
+using UnityEditor;
 
 public class DoorController : MonoBehaviour
 {
@@ -28,33 +31,26 @@ public class DoorController : MonoBehaviour
     */
 
     public Animator anim;
-
-    public float distanceToOpen;
-
-    private PlayerController thePlayer;
-
-    private bool playerExiting;
+    public bool isAlternation;
 
     public Transform exitPoint;
-
-    public float movePlayerSpeed;
-
     public string levelToLoad;
 
     public string alternative1;
-
     public string alternative2;
 
     public string buttonText1;
-
     public string buttonText2;
 
     public VideoClip videoClip1;
-
     public VideoClip videoClip2;
+    
+    private float distanceToOpen = 7.5f;
+    private float movePlayerSpeed = 8;
+    private bool playerExiting;
+    private PlayerController thePlayer;
 
     private float colorChanger = -0.004f;
-
 
     // Start is called before the first frame update
     void Start()
@@ -83,7 +79,7 @@ public class DoorController : MonoBehaviour
                     transform.position.z), movePlayerSpeed * Time.deltaTime);
         }
 
-        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
+        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2) && isAlternation)
         {
             gameObject.GetComponentInChildren<SpriteRenderer>().color = 
                 new Color(gameObject.GetComponentInChildren<SpriteRenderer>().color.r + colorChanger, 
@@ -123,24 +119,28 @@ public class DoorController : MonoBehaviour
         thePlayer.anim.enabled = false;
 
         //Trigger choice mechanic, if we are going through the door for the first time.
-        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
+        if (isAlternation)
         {
-            ChoiceWindow();
-        }
-        yield return new WaitForSeconds(0.1f);
-        if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
-        {
-            //The player is exiting the area now.
-            playerExiting = false;
+            if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
+            {
+                ChoiceWindow();
+            }
+            yield return new WaitForSeconds(0.1f);
+            if (!PlayerPrefs.HasKey(alternative1) && !PlayerPrefs.HasKey(alternative2))
+            {
+                //The player is exiting the area now.
+                playerExiting = false;
 
-            //The animator should stop working now, so that we are stuck on the running animation.
-            thePlayer.anim.enabled = true;
-            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x + 2 * transform.localScale.x, thePlayer.transform.position.y, thePlayer.transform.position.z);
+                //The animator should stop working now, so that we are stuck on the running animation.
+                thePlayer.anim.enabled = true;
+                thePlayer.transform.position = new Vector3(thePlayer.transform.position.x + 2 * transform.localScale.x, thePlayer.transform.position.y, 0);
 
-            //Now the player can move.
-            thePlayer.canMove = true;
-            yield break;
+                //Now the player can move.
+                thePlayer.canMove = true;
+                yield break;
+            }
         }
+        
         
         thePlayer.theRB.gravityScale = 0f;
         //We slowly cover the screen.
@@ -165,7 +165,6 @@ public class DoorController : MonoBehaviour
         PlayerPrefs.SetString("ContinueLevel", levelToLoad);
         PlayerPrefs.SetFloat("PosX", exitPoint.position.x);
         PlayerPrefs.SetFloat("PosY", exitPoint.position.y);
-        PlayerPrefs.SetFloat("PosZ", exitPoint.position.z);
 
         //New scene is loaded.
         SceneManager.LoadScene(levelToLoad);
@@ -173,7 +172,7 @@ public class DoorController : MonoBehaviour
         //We start slowly uncovering the scene.
         UIController.instance.StartFadeFromBlack();
 
-        thePlayer.transform.position = new Vector3(exitPoint.position.x, exitPoint.position.y, exitPoint.position.z);
+        thePlayer.transform.position = new Vector3(exitPoint.position.x, exitPoint.position.y, 0);
         
         thePlayer.theRB.gravityScale = 5f;
         //Now the player can move.

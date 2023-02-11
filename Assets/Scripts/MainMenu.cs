@@ -28,11 +28,9 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetFloat("PosX", 2);
         PlayerPrefs.SetFloat("PosY", 22.5f);
-        PlayerPrefs.SetFloat("PosZ", 0);
-        //PlayerPrefs.SetString("ContinueLevel", "Room1");
+
         PlayerPrefs.SetInt("canDoubleJump", 0);
         SceneManager.LoadScene(newGameScene);
-        PlayerPrefs.SetInt("max_health", 6);
         PlayerPrefs.SetString("enemies_killed", "0");
         PlayerPrefs.SetString("player_deaths", "0");
         PlayerPrefs.SetString("none", "0");
@@ -41,8 +39,8 @@ public class MainMenu : MonoBehaviour
     public void Continue()
     {
         player.gameObject.SetActive(true);
-        player.transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"), PlayerPrefs.GetFloat("PosY"),
-            PlayerPrefs.GetFloat("PosZ"));
+        player.transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"), PlayerPrefs.GetFloat("PosY"), 0);
+
         if (PlayerPrefs.GetInt("canDoubleJump") == 1)
         {
             player.canDoubleJump = true;

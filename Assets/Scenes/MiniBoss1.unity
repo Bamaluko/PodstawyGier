@@ -23928,9 +23928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1569250947}
-  distanceToOpen: 7.5
+  isAlternation: 1
   exitPoint: {fileID: 2790037}
-  movePlayerSpeed: 8
   levelToLoad: Level1a
   alternative1: WindFlow
   alternative2: WindZoom
@@ -24234,16 +24233,24 @@ PrefabInstance:
       value: -7.36
       objectReference: {fileID: 0}
     - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
+      propertyPath: buttonText1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
+      propertyPath: buttonText2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
       propertyPath: levelToLoad
       value: Tutorial3
       objectReference: {fileID: 0}
     - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
       propertyPath: alternative1
-      value: rotate_square_platform
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6822987060693782653, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}
       propertyPath: alternative2
-      value: move_square_platform
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38bf5eb92d3010e4fb2506c2c587f2d9, type: 3}

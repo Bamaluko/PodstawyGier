@@ -46,7 +46,7 @@ public class PlayerHealthController : MonoBehaviour
         }
     }
 
-    //[HideInInspector]
+    [HideInInspector]
     public int currentHealth;
     public int maxHealth;
 
